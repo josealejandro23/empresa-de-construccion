@@ -25,9 +25,7 @@
 	<body>
 		<div class="cuerpo">
 			<!--TODO: Inicio Barra superior -->
-				<nav
-				class="barra-superior navbar pt-0 pb-0 d-lg-flex d-none"
-			>
+			<nav class="barra-superior navbar pt-0 pb-0 d-lg-flex d-none">
 				<span class="text-left mt-2 mb-2 ml-4"
 					>Abierto desde las 8:00 A.M hasta las 5:00 P.M</span
 				>
@@ -78,7 +76,7 @@
 			<!--TODO: Fin barra de marca  -->
 
 			<!--TODO: Inicio Navbar  -->
-			<div class="navbar-menu">
+			<div class="navbar-menu d-none d-lg-flex">
 				<div class="container-fluid m-0 p-0">
 					<nav class="navbar navbar-expand-lg navbar-light bg-light">
 						<button
@@ -136,9 +134,10 @@
 			<!--TODO: Fin navbar  -->
 
 			<!--TODO: Inicio mensaje principal  -->
-			<div class="contenedor-mensaje-principal">
-				<p class="mensaje-pricipal">Limpiamos el agua que desechas
-					antes de regresarla a la naturaleza
+			<div class="container-fluid d-none d-lg-flex contenedor-mensaje-principal">
+				<p class="mensaje-pricipal">
+					Limpiamos el agua que desechas antes de regresarla a la
+					naturaleza
 				</p>
 				<p class="subtitulo-principal">
 					Ayuda al ambiente, limpia tus residuos
@@ -146,70 +145,77 @@
 			</div>
 			<!--TODO: Fin mensaje principal  -->
 
-			<!--TODO: Inicio capa para oscurecer carrusel  -->
-			<div class="container-fluid contenedor-capa"></div>
-			<!--TODO: Inicio capa para oscurecer carrusel  -->
-			
-			<!--TODO: Inicio carrusel de fondo -->
-			<!--! Se muestra solo para tamaños LG, para tamaños inferiores ver siguiente bloque  -->
-			<div id="carrusel" style="height: auto;" class="container-fluid carrusel d-lg-block d-none">
-				<div id="carouselId" class="carousel slide" data-ride="carousel">
-					<div class="carousel-inner" role="listbox">
-						<div class="carousel-item active">
-							<img src="images/agua1.jpg" alt="Agua1" />
+			<!--TODO: Inicio contenedor carrusel y capa de color de carrusel -->
+			<div class="container-fluid m-0 p-0 contenedor-carrusel">
+				<!--TODO: Inicio capa para oscurecer carrusel  -->
+				<div class="container-fluid contenedor-capa"></div>
+				<!--TODO: Inicio capa para oscurecer carrusel  -->
+
+				<!--TODO: Inicio carrusel de fondo -->
+				<!--! Se muestra solo para tamaños LG, para tamaños inferiores ver siguiente bloque  -->
+				<div
+					id="carrusel"
+					class="container-fluid carrusel d-lg-block d-none"
+				>
+					<div id="carouselId" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active">
+								<img src="images/agua1.jpg" alt="Agua1" />
+							</div>
+							<div class="carousel-item">
+								<img src="images/aguas2.jpg" alt="Agua2" />
+							</div>
+							<div class="carousel-item">
+								<img src="images/agua3.jpg" alt="Agua3" />
+							</div>
 						</div>
-						<div class="carousel-item">
-							<img src="images/aguas2.jpg" alt="Agua2" />
-						</div>
-						<div class="carousel-item">
-							<img src="images/agua3.jpg" alt="Agua3" />
-						</div>
+						<a
+							class="carousel-control-prev control-izq"
+							href="#carouselId"
+							role="button"
+							data-slide="prev"
+						>
+							<svg
+								class="bi bi-chevron-left icono"
+								width="1em"
+								height="1em"
+								viewBox="0 0 16 16"
+								fill="currentColor"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+								/>
+							</svg>
+							<span class="sr-only">Anterior</span>
+						</a>
+						<a
+							class="carousel-control-next control-der"
+							href="#carouselId"
+							role="button"
+							data-slide="next"
+						>
+							<svg
+								class="bi bi-chevron-right icono"
+								width="32"
+								height="32"
+								viewBox="0 0 20 20"
+								fill="currentColor"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"
+								/>
+							</svg>
+							<span class="sr-only">Siguiente</span>
+						</a>
 					</div>
-					<a
-						class="carousel-control-prev control-izq"
-						href="#carouselId"
-						role="button"
-						data-slide="prev"
-					>
-						<svg
-							class="bi bi-chevron-left icono"
-							width="1em"
-							height="1em"
-							viewBox="0 0 16 16"
-							fill="currentColor"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-							/>
-						</svg>
-						<span class="sr-only">Anterior</span>
-					</a>
-					<a
-						class="carousel-control-next control-der"
-						href="#carouselId"
-						role="button"
-						data-slide="next"
-					>
-						<svg
-							class="bi bi-chevron-right icono"
-							width="32"
-							height="32"
-							viewBox="0 0 20 20"
-							fill="currentColor"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"
-							/>
-						</svg>
-						<span class="sr-only">Siguiente</span>
-					</a>
 				</div>
+				<!--TODO: Fin carrusel de fondo -->
 			</div>
-			<!--TODO: Fin carrusel de fondo -->
+			<!--TODO: Fin contenedor carrusel y capa de color de carrusel -->
 
 			<!--TODO: Inicio Bloque carrusel tamaños inferiores a LG  -->
 			<!--! Se muestra solo para tamaños Xs,Sm y MD  -->
@@ -217,8 +223,62 @@
 				<img class="imagen" src="images/agua1.jpg" alt="" />
 			</div>
 			<!--TODO: Fin Bloque carrusel tamaños inferiores a LG  -->
-		</div>
 
+			<!--TODO: Inicio card deck -->
+			<!-- <div class="container contenedor-card-deck">
+				<div class="card-group">
+					<div class="card">
+						<img src="..." class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">
+								This is a wider card with supporting text below as a
+								natural lead-in to additional content. This content is a
+								little bit longer.
+							</p>
+							<p class="card-text">
+								<small class="text-muted"
+									>Last updated 3 mins ago</small
+								>
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="..." class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">
+								This card has supporting text below as a natural lead-in
+								to additional content.
+							</p>
+							<p class="card-text">
+								<small class="text-muted"
+									>Last updated 3 mins ago</small
+								>
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="..." class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">
+								This is a wider card with supporting text below as a
+								natural lead-in to additional content. This card has
+								even longer content than the first to show that equal
+								height action.
+							</p>
+							<p class="card-text">
+								<small class="text-muted"
+									>Last updated 3 mins ago</small
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<!--TODO: Fin Card deck -->
+		</div>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script
