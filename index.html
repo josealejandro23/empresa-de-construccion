@@ -146,31 +146,30 @@
 			<!--TODO: Fin mensaje principal  -->
 
 			<!--TODO: Inicio contenedor carrusel y capa de color de carrusel -->
-			<div class="container-fluid m-0 p-0 contenedor-carrusel">
-				<!--TODO: Inicio capa para oscurecer carrusel  -->
-				<div class="container-fluid contenedor-capa"></div>
-				<!--TODO: Inicio capa para oscurecer carrusel  -->
-
+			<div class="contenedor-carrusel">
 				<!--TODO: Inicio carrusel de fondo -->
 				<!--! Se muestra solo para tamaños LG, para tamaños inferiores ver siguiente bloque  -->
 				<div
 					id="carrusel"
-					class="container-fluid carrusel d-lg-block d-none"
+					class="container-fluid m-0 p-0 carrusel"
 				>
 					<div id="carouselId" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
+								<div class="contenedor-capa"></div>
 								<img src="images/agua1.jpg" alt="Agua1" />
 							</div>
 							<div class="carousel-item">
+								<div class="contenedor-capa"></div>
 								<img src="images/aguas2.jpg" alt="Agua2" />
 							</div>
 							<div class="carousel-item">
+								<div class="contenedor-capa"></div>
 								<img src="images/agua3.jpg" alt="Agua3" />
 							</div>
 						</div>
 						<a
-							class="carousel-control-prev control-izq"
+							class="carousel-control-prev control-izq d-lg-flex d-none"
 							href="#carouselId"
 							role="button"
 							data-slide="prev"
@@ -191,7 +190,7 @@
 							<span class="sr-only">Anterior</span>
 						</a>
 						<a
-							class="carousel-control-next control-der"
+							class="carousel-control-next control-der d-lg-flex d-none"
 							href="#carouselId"
 							role="button"
 							data-slide="next"
@@ -216,13 +215,6 @@
 				<!--TODO: Fin carrusel de fondo -->
 			</div>
 			<!--TODO: Fin contenedor carrusel y capa de color de carrusel -->
-
-			<!--TODO: Inicio Bloque carrusel tamaños inferiores a LG  -->
-			<!--! Se muestra solo para tamaños Xs,Sm y MD  -->
-			<div class="imagen-carrusel d-lg-none d-block">
-				<img class="imagen" src="images/agua1.jpg" alt="" />
-			</div>
-			<!--TODO: Fin Bloque carrusel tamaños inferiores a LG  -->
 
 			<!--TODO: Inicio card deck -->
 			<!-- <div class="container contenedor-card-deck">

@@ -106,23 +106,23 @@ body{
    font-size: 1.2rem;
 }
 
+.carrusel{  /* ? Ajuste del contenedor del carrusel */
+   margin: 0;
+   padding: 0;
+}
+
 .contenedor-capa{ /* ? Capa de color sobre el carrusel */
    position: absolute;
    margin: 0;
    padding: 0;
    z-index: 1;
-   width: 100%;
-   height: 100vh;
+   width: 100%; /* ? ocupa el ancho de la pantalla */
+   height: 100%;
    background-color: rgba(4, 14, 39, 0.5);
 }
-
-.carrusel{  /* ? Ajuste del carrusel */
-   margin: 0;
-   padding: 0;
-}
-
-.carousel-item{  /* ? Ajusta el tamaño máximo para las imágenes del carrusel */
-   max-height: 100vh;
+ 
+.contenedor-capa~img{  /* ? Permite ajustar el carrusel en versiones móviles */
+   width: 100%;
 }
 
 .navbar-menu{ /* ? Ajuste del navbar para ubicarlo de forma flotante */
