@@ -93,7 +93,6 @@ body{
    width: 100%;
 }
 
-
 .titulo-barra{  /* ? Estilos de los títulos de contacto de la barra de contacto y marca */
    text-transform: uppercase;
    font-family: raleway, sans-serif;
@@ -109,6 +108,7 @@ body{
 .carrusel{  /* ? Ajuste del contenedor del carrusel */
    margin: 0;
    padding: 0;
+   position: relative;
 }
 
 .contenedor-capa{ /* ? Capa de color sobre el carrusel */
@@ -164,29 +164,34 @@ body{
    border-bottom: 3px solid #f0542c;
 }
 
+.contenedor-carrusel-titulo-navbar{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
 .contenedor-mensaje-principal{ /* ? Ajusta el estilo del contenedor del mensaje principal */
+   padding-top: 5rem;
    display: flex;
    flex-wrap: wrap;  /** Evita que título y subtítulo ocupen la misma línea y los ubica uno sobre el otro */
    text-align: center;
    position: absolute;
    z-index: 2;
-   top: 40%;
    width: 80%;
-   left: 10%;
    height: auto;
    justify-content: center;
+   align-items: flex-end;
 }
 
 .contenedor-mensaje-principal p:first-child{  /* ? Ajusta el estilo del texto del mensaje principal */
    margin: 0;
    padding: 0;
    text-transform: uppercase;
-   font-size: 4.3rem;
+   font-size: 5vw;
    line-height: 5rem;
    font-family: raleway, sans-serif;
    font-weight: bolder;
-   color: white;
-
+   color: red;
 }
 
 .contenedor-mensaje-principal p:last-child{ /* ? Estilos para el subtítulo principal */
