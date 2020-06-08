@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 	<head>
-		<title>Vargas, sistemas de tratamiento</title>
+		<title>Title</title>
 		<!-- Required meta tags -->
 		<meta charset="utf-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
+
 		<!-- Bootstrap CSS -->
 		<link
 			rel="stylesheet"
@@ -15,272 +16,122 @@
 			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 			crossorigin="anonymous"
 		/>
-
 		<link rel="stylesheet" href="estilos/index.css" />
-		<!-- <script
-			src="https://kit.fontawesome.com/9201bec3b6.js"
-			crossorigin="anonymous"
-		></script> -->
 	</head>
 	<body>
-		<div class="cuerpo">
-			<!--TODO: Inicio Barra superior -->
-			<nav class="barra-superior navbar pt-0 pb-0 d-lg-flex d-none">
-				<span class="text-left mt-2 mb-2 ml-4"
-					>Abierto desde las 8:00 A.M hasta las 5:00 P.M</span
-				>
-				<form class="form-inline">
-					<button
-						class="btn btn-primary rounded-0 mr-4 boton-superior"
-						type="button"
-					>
-						CONTÁCTANOS
+		<!--todo: inicio barra superior -->
+		<div
+			class="container-fluid mx-0 p-0 justify-content-center d-none d-lg-flex"
+		>
+			<div
+				class="row barra-superior d-flex flex-nowrap justify-content-between"
+			>
+				<div class="col-auto pl-5">
+					<p class="m-0 ml-5">
+						Abierto desde las 8:00 A.M hasta las 5:00 P.M
+					</p>
+				</div>
+				<div class="col-auto offset-auto d-flex pr-5">
+					<button type="button" class="mr-5 btn btn-danger boton-superior">
+						Contáctanos
 					</button>
-				</form>
-			</nav>
-			<!--TODO: Inicio Barra superior -->
+				</div>
+			</div>
+		</div>
+		<!--todo: fin barra superior  -->
 
-			<!--TODO: Inicio barra de marca  -->
-			<div class="container-fluid barra-marca d-none d-md-flex">
-				<div class="col-md-3">
+		<!--todo: inicio barra de marca  -->
+		<div
+			class="container-fluid mx-0 p-0 d-lg-flex d-none justify-content-center"
+		>
+			<div class="row barra-marca d-flex flex-nowrap">
+				<div class="col-5 ml-5 pl-5">
 					<img src="images/icons/footer_logo.png" alt="" />
 				</div>
-				<div class="contacto col-md-9">
-					<div class="d-flex">
-						<div class="mr-3">
-							<img
-								src="images/icons/header-address.svg"
-								alt="dirección"
-							/>
-						</div>
+				<div class="col-5 offset-1 d-flex flex-nowrap contacto">
+					<div class="d-flex flex-nowrap">
 						<div>
-							<h3 class="titulo-barra">Dirección</h3>
-							<p class="mb-0 pb-0">El Tambo, Cauca</p>
+							<img src="images/icons/header-address.svg" alt="" />
+						</div>
+						<div class="ml-2">
+							<p class="m-0 titulo-barra">Dirección</p>
+							<p class="m-0">El Tambo, cauca</p>
 						</div>
 					</div>
-					<div class="d-flex">
-						<div class="mr-3">
-							<img
-								class="icono-contacto"
-								src="images/icons/headset.svg"
-								alt="llamanos"
-							/>
-						</div>
+					<div class="d-flex flex-nowrap">
 						<div>
-							<h3 class="titulo-barra">Llámanos</h3>
-							<p class="mb-0 pb-0">+57 3137632648</p>
+							<img src="images/icons/headset.svg" alt="" />
+						</div>
+						<div class="ml-2">
+							<p class="m-0 titulo-barra">Llámanos</p>
+							<p>+57 3137632648</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!--TODO: Fin barra de marca  -->
-
-			<div class="container-fluid m-0 p-0 contenedor-carrusel-titulo-navbar">
-				<!--TODO: Inicio Navbar  -->
-				<div class="navbar-menu d-none d-lg-flex">
-					<div class="container-fluid m-0 p-0">
-						<nav class="navbar navbar-expand-lg navbar-light bg-light">
-							<button
-								class="navbar-toggler"
-								type="button"
-								data-toggle="collapse"
-								data-target="#navbarNavDropdown"
-								aria-controls="navbarNavDropdown"
-								aria-expanded="false"
-								aria-label="Toggle navigation"
-							>
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<div
-								class="collapse navbar-collapse"
-								id="navbarNavDropdown"
-							>
-								<ul class="navbar-nav">
-									<li class="nav-item active">
-										<a class="nav-link" href="#"
-											>Inicio
-											<span class="sr-only">(current)</span></a
-										>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Nosotros</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Servicios</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Blog</a>
-									</li>
-									<li class="nav-item dropdown">
-										<a
-											class="nav-link dropdown-toggle"
-											href="#"
-											id="navbarDropdownMenuLink"
-											role="button"
-											data-toggle="dropdown"
-											aria-haspopup="true"
-											aria-expanded="false"
-										>
-											Proyectos
-										</a>
-										<div
-											class="dropdown-menu"
-											aria-labelledby="navbarDropdownMenuLink"
-										>
-											<a class="dropdown-item" href="#"
-												>En ejecución</a
-											>
-											<a class="dropdown-item" href="#"
-												>Resultados</a
-											>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</nav>
-					</div>
-				</div>
-				<!--TODO: Fin navbar  -->
-
-				<!--TODO: Inicio mensaje principal  -->
-				<div class="container contenedor-mensaje-principal">
-					<p class="mensaje-pricipal">
-						Limpiamos el agua que desechas antes de regresarla a la
-						naturaleza
-					</p>
-					<p class="subtitulo-principal">
-						Ayuda al ambiente, limpia tus residuos
-					</p>
-				</div>
-				<!--TODO: Fin mensaje principal  -->
-
-				<!--TODO: Inicio contenedor carrusel y capa de color de carrusel -->
-				<div class="contenedor-carrusel">
-					<!--TODO: Inicio carrusel de fondo -->
-					<div id="carrusel" class="container-fluid m-0 p-0 carrusel">
-						<div
-							id="carouselId"
-							class="carousel slide"
-							data-ride="carousel"
-						>
-							<div class="carousel-inner" role="listbox">
-								<div class="carousel-item active">
-									<div class="contenedor-capa"></div>
-									<img src="images/agua1.jpg" alt="Agua1" />
-								</div>
-								<div class="carousel-item">
-									<div class="contenedor-capa"></div>
-									<img src="images/aguas2.jpg" alt="Agua2" />
-								</div>
-								<div class="carousel-item">
-									<div class="contenedor-capa"></div>
-									<img src="images/agua3.jpg" alt="Agua3" />
-								</div>
-							</div>
-							<a
-								class="carousel-control-prev control-izq d-lg-flex d-none"
-								href="#carouselId"
-								role="button"
-								data-slide="prev"
-							>
-								<svg
-									class="bi bi-chevron-left icono"
-									width="1em"
-									height="1em"
-									viewBox="0 0 16 16"
-									fill="currentColor"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										fill-rule="evenodd"
-										d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-									/>
-								</svg>
-								<span class="sr-only">Anterior</span>
-							</a>
-							<a
-								class="carousel-control-next control-der d-lg-flex d-none"
-								href="#carouselId"
-								role="button"
-								data-slide="next"
-							>
-								<svg
-									class="bi bi-chevron-right icono"
-									width="32"
-									height="32"
-									viewBox="0 0 20 20"
-									fill="currentColor"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										fill-rule="evenodd"
-										d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"
-									/>
-								</svg>
-								<span class="sr-only">Siguiente</span>
-							</a>
-						</div>
-					</div>
-					<!--TODO: Fin carrusel de fondo -->
-				</div>
-				<!--TODO: Fin contenedor carrusel y capa de color de carrusel -->
-			</div>
-
-			<!--TODO: Inicio card deck -->
-			<!-- <div class="container contenedor-card-deck">
-				<div class="card-group">
-					<div class="card">
-						<img src="..." class="card-img-top" alt="..." />
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
-								This is a wider card with supporting text below as a
-								natural lead-in to additional content. This content is a
-								little bit longer.
-							</p>
-							<p class="card-text">
-								<small class="text-muted"
-									>Last updated 3 mins ago</small
-								>
-							</p>
-						</div>
-					</div>
-					<div class="card">
-						<img src="..." class="card-img-top" alt="..." />
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
-								This card has supporting text below as a natural lead-in
-								to additional content.
-							</p>
-							<p class="card-text">
-								<small class="text-muted"
-									>Last updated 3 mins ago</small
-								>
-							</p>
-						</div>
-					</div>
-					<div class="card">
-						<img src="..." class="card-img-top" alt="..." />
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
-								This is a wider card with supporting text below as a
-								natural lead-in to additional content. This card has
-								even longer content than the first to show that equal
-								height action.
-							</p>
-							<p class="card-text">
-								<small class="text-muted"
-									>Last updated 3 mins ago</small
-								>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div> -->
-			<!--TODO: Fin Card deck -->
 		</div>
+		<!--todo fin barra de marca  -->
+
+		<!--todo: inicio navbar  -->
+		<div class="container navbar-menu d-lg-flex">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+					<span class="imagen-navbar d-lg-none m-3"
+						><img src="images/icons/footer_logo.png" alt=""
+					/></span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item active">
+								<a class="nav-link" href="#"
+									>Inicio <span class="sr-only">(current)</span></a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Nosotros</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Servicios</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Blog</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdownMenuLink"
+									role="button"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									Proyectos
+								</a>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="navbarDropdownMenuLink"
+								>
+									<a class="dropdown-item" href="#">En ejecución</a>
+									<a class="dropdown-item" href="#">Resultados</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!--todo: fin navbar  -->
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script
@@ -298,6 +149,5 @@
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 			crossorigin="anonymous"
 		></script>
-		<script src="scripts/index.js"></script>
 	</body>
 </html>

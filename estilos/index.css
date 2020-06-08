@@ -1,209 +1,250 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 
-html{  /* ? Fija la fuente en 14 */
-   font-size: 14px;
+html {
+	/* ? Fija la fuente en 14 */
+	font-size: 14px;
 }
 
-body{
-   background-color: white;
+body {
+	background-color: white;
+	margin: 0;
+	padding: 0;
 }
 
-.cuerpo{
-   margin: 0;
-   padding: 0;
-   max-width: 100%;
-}
-
-.barra-superior {  /* ? Ajusta la barra superior */
-   display: flex;
-   align-items: center;
-   padding-bottom: 1rem;
-   background-color: #040e27;
-   font-family: raleway,sans-serif;
-   font-weight: 500;
-   font-size: 1rem;
+.barra-superior {
+	/* ? Ajusta la barra superior */
+	display: flex;
+	align-items: center;
+	padding-bottom: 1rem;
+	background-color: #040e27;
+	font-family: raleway, sans-serif;
+	font-weight: 500;
+	font-size: 1rem;
 	color: white;
-   margin: 0;
-   padding: 0;
-   height: 3.5rem;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	width: 100vw;
+	max-width: 1920px;
 }
 
-.boton-superior {  /* ? Estilo al boton de la barra superior */
-   padding-top: 1rem;
-   padding-bottom: 1rem;
-   font-family: raleway,sans-serif;
-   font-size: 1rem;
-   line-height: 21px;
-   font-weight: 600;
-   height: 50px;
-   width: 200px;
-   background-color: #f0542c;
-   border-color: #f0542c;
+.boton-superior {
+	/* ? Estilo al boton de la barra superior */
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-family: raleway, sans-serif;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 600;
+	height: 50px;
+	width: 200px;
+	background-color: #f0542c;
+	border-color: #f0542c;
+	text-transform: uppercase;
 }
 
-.boton-superior:hover{
-   background-color: #040e27;
-   border-color: #040e27;
+.boton-superior:hover {
+	background-color: #040e27;
+	border-color: #040e27;
 }
 
-.icono{  /* ? Estilo a los botones prev y next del carrusel */
-   background-color: rgba(255, 255, 255, 0.2);
-   height: 7rem;
-   width: 4rem;
-   left: 0;
-   right: 0;
+.barra-marca {
+	/* ? Estilos de la barra de datos de contacto y marca */
+	display: flex;
+	align-items: center;
+	height: auto;
+	margin: 0;
+	background-color: rgba(4, 14, 39, 0.5);
+	height: 9rem;
+	width: 100vw;
+	max-width: 1920px;
 }
 
-.control-izq, .control-der{  /* ? Estilo al contenedor de los botones del carrusel */
-   width: 3rem;
+.contacto {
+	/* ? Estilo de los datos de contacto de la barra de contacto y marca  */
+	text-transform: uppercase;
+	color: white;
+	font-family: raleway, sans-serif;
+	font-weight: 400;
+	width: 100%;
+	justify-content: space-around;
 }
 
-.icono:hover{  /* ? Estilo al contenedor de los botones del carrusel */
-   background-color: white;
-   color: gray;
+.contacto p:first-child {
+	font-size: 0.9rem;
+}
+.contacto p:last-child {
+	font-size: 1rem;
 }
 
-.imagen{  /*? Ajusta la imagen de fondo para móviles  */
-   width: 90vh;
-   margin: auto;
+.titulo-barra {
+	/* ? Estilos de los títulos de contacto de la barra de contacto y marca */
+	text-transform: uppercase;
+	font-family: raleway, sans-serif;
+	color: #f0542c;
+	margin-bottom: 0;
 }
 
-.barra-marca{  /* ? Estilos de la barra de datos de contacto y marca */
-   display: flex;
-   align-items: center;
-   position: absolute;
-   height: 11rem;
-   background-color: rgba(4, 14, 39, 0.5);
-   z-index: 2;
-   padding: 4rem;
-   padding-top: 2rem;
-   padding-bottom: 4rem;
-   width: 100%;
+.navbar-menu {
+	/* ? Ajuste del navbar para ubicarlo de forma flotante */
+	width: 100%;
+	height: 7rem;
+	z-index: 1;
+	margin-top: -2rem;
 }
 
-.contacto{  /* ? Estilo de los datos de contacto de la barra de contacto y marca  */
-   text-transform: uppercase;
-   display: flex;
-   color: white;
-   font-family: raleway, sans-serif;
-   font-weight: 400;
-   padding-left: 10rem;
-   justify-content: space-between;
-   margin: auto;
-   width: 100%;
+.navbar-menu .navbar {
+	/* ? Estilos de letra y tamaño al navbar menu */
+	font-family: raleway, sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	border-radius: 0.7rem;
 }
 
-.titulo-barra{  /* ? Estilos de los títulos de contacto de la barra de contacto y marca */
-   text-transform: uppercase;
-   font-family: raleway, sans-serif;
-   font-size: 1.2rem;
-   color: #f0542c;
-   margin-bottom: 0;
+.navbar-nav .nav-item .nav-link,
+.dropdown-item {
+	color: rgba(0, 0, 0, 0.5);  /* ? Color de las letras de la barra de menú */
 }
 
-.contacto p{ /* ? Tamaño de fuente para datos de la barra de contacto y marca */
-   font-size: 1.2rem;
+.navbar-nav .nav-item .nav-link:hover,
+.dropdown-item:hover {
+	color: #f0542c;  /* ? Efecto de cambio de color al hacer hover en el menú */
+	transition-duration: 500ms;
 }
 
-.carrusel{  /* ? Ajuste del contenedor del carrusel */
-   margin: 0;
-   padding: 0;
-   position: relative;
+.navbar li:hover {
+	/* ? Efecto en los elementos navbar */
+	transition-duration: 0.3s;
+	border-bottom: 3px solid #f0542c;
 }
 
-.contenedor-capa{ /* ? Capa de color sobre el carrusel */
-   position: absolute;
-   margin: 0;
-   padding: 0;
-   z-index: 1;
-   width: 100%; /* ? ocupa el ancho de la pantalla */
-   height: 100%;
-   background-color: rgba(4, 14, 39, 0.5);
-}
- 
-.contenedor-capa~img{  /* ? Permite ajustar el carrusel en versiones móviles */
-   width: 100%;
+.navbar .active {
+	/* ? Da estilo al nombre de la página activa */
+	border-bottom: 3px solid orangered;
 }
 
-.navbar-menu{ /* ? Ajuste del navbar para ubicarlo de forma flotante */
-   display: flex;
-   position: absolute;
-   width: 80%;
-   z-index: 2;
-   top: 12rem;
-   left: 10%;
+.navbar li {
+	/* ? Da margen a los elementos del navbar */
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
-.navbar-menu .navbar{ /* ? Estilos de letra y tamaño al navbar menu */
-   font-family: raleway, sans-serif;
-   font-size: 1.1rem;
-   font-weight: 500;
-   height: 5rem;
-   border-radius: 0.7rem;
+@media (max-width: 767px) { /* ? Ajuste de elementos para pantallas inferiores a LG  */
+	.navbar-menu .navbar { /* ? ajuste de navbar */
+		background-color: #040e27 !important;
+		padding: 0;
+		margin: 0;
+		width: 100vw;
+      border-radius: 0rem;
+      max-height: 5rem;
+	}
+
+   .navbar-toggler{
+      background-color: white;
+      margin-right: 2rem;
+   }
+
+	.collapse,
+	.navbar-collapse { /* ? Estilos para el menú desplegable */
+      background-color: white;
+      width: 90%;
+      margin: 0rem 1rem 0rem 1rem;
+	}
+
+	.navbar-menu { /* ? ajuste de posición del navbar */
+		margin: 0;
+		padding: 0;
+	}
+
+	.navbar-menu .container { /* ? ajuste del contenedor del navbar */
+		margin: 0;
+		padding: 0;
+	}
 }
 
-.navbar .active{ /* ? Da estilo al nombre de la página activa */
-   border-bottom: 3px solid orangered;
+.icono {
+	/* ? Estilo a los botones prev y next del carrusel */
+	background-color: rgba(255, 255, 255, 0.2);
+	height: 7rem;
+	width: 4rem;
+	left: 0;
+	right: 0;
 }
 
-.navbar li{ /* ? Da margen a los elementos del navbar */
-   margin-left: 1rem;
-   margin-right: 1rem;
+.control-izq,
+.control-der {
+	/* ? Estilo al contenedor de los botones del carrusel */
+	width: 3rem;
 }
 
-.nav-link{ /* ? Color para las letras del navbar menú */
-   color: rgba(0, 0, 0, 0.5)
+.icono:hover {
+	/* ? Estilo al contenedor de los botones del carrusel */
+	background-color: white;
+	color: gray;
 }
 
-.nav-link:hover{ /* ? color al hacer hover sobre el navbar menú */
-   color: #f0542c;
+.carrusel {
+	/* ? Ajuste del contenedor del carrusel */
+	margin: 0;
+	padding: 0;
+	position: relative;
 }
 
-.navbar li:hover{  /* ? Efecto en los elementos navbar */
-   transition-duration: 0.2s;
-   border-bottom: 3px solid #f0542c;
+.contenedor-capa {
+	/* ? Capa de color sobre el carrusel */
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+	width: 100%; /* ? ocupa el ancho de la pantalla */
+	height: 100%;
+	background-color: rgba(4, 14, 39, 0.5);
 }
 
-.contenedor-carrusel-titulo-navbar{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.contenedor-capa ~ img {
+	/* ? Permite ajustar el carrusel en versiones móviles */
+	width: 100%;
 }
 
-.contenedor-mensaje-principal{ /* ? Ajusta el estilo del contenedor del mensaje principal */
-   padding-top: 5rem;
-   display: flex;
-   flex-wrap: wrap;  /** Evita que título y subtítulo ocupen la misma línea y los ubica uno sobre el otro */
-   text-align: center;
-   position: absolute;
-   z-index: 2;
-   width: 80%;
-   height: auto;
-   justify-content: center;
-   align-items: flex-end;
+.contenedor-carrusel-titulo-navbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.contenedor-mensaje-principal p:first-child{  /* ? Ajusta el estilo del texto del mensaje principal */
-   margin: 0;
-   padding: 0;
-   text-transform: uppercase;
-   font-size: 5vw;
-   line-height: 5rem;
-   font-family: raleway, sans-serif;
-   font-weight: bolder;
-   color: red;
+.contenedor-mensaje-principal {
+	/* ? Ajusta el estilo del contenedor del mensaje principal */
+	display: flex;
+	flex-wrap: wrap; /** Evita que título y subtítulo ocupen la misma línea y los ubica uno sobre el otro */
+	text-align: center;
+	position: absolute;
+	z-index: 2;
+	width: 80%;
+	height: auto;
+	justify-content: center;
+	align-items: flex-end;
 }
 
-.contenedor-mensaje-principal p:last-child{ /* ? Estilos para el subtítulo principal */
-   margin: 0;
-   padding: 0;
-   text-transform: uppercase;
-   font-family: raleway, sans-serif;
-   font-weight: 600;
-   font-size: 1.3rem;
-   line-height: 2rem;
-   color: white;
+.contenedor-mensaje-principal p:first-child {
+	/* ? Ajusta el estilo del texto del mensaje principal */
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 10vh;
+	line-height: 10vh;
+	font-family: raleway, sans-serif;
+	font-weight: bolder;
+	color: white;
 }
 
-
- 
+.contenedor-mensaje-principal p:last-child {
+	/* ? Estilos para el subtítulo principal */
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: raleway, sans-serif;
+	font-weight: 600;
+	font-size: 3vh;
+	line-height: 4vh;
+	color: white;
+}
