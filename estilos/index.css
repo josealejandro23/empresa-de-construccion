@@ -129,7 +129,7 @@ body {
 	margin-right: 1rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) { /* ? pantallas menores a lg */
 	/* ? Ajuste de elementos para pantallas inferiores a LG  */
 	.navbar-menu .navbar {
 		/* ? ajuste de navbar */
@@ -153,6 +153,7 @@ body {
 		background-color: white;
 		width: 90%;
 		margin: 0rem 1rem 0rem 1rem;
+		padding-bottom: 1rem;
 	}
 
 	.navbar-menu {
@@ -178,7 +179,7 @@ body {
 		text-align: center;
 		height: auto;
 		justify-content: center;
-		margin-top: 5rem;
+		margin-top: 3rem;
 	}
 
 	.contenedor-mensaje-principal p:first-child {
@@ -190,7 +191,7 @@ body {
 		line-height: 3rem;
 		font-family: raleway, sans-serif;
 		font-weight: bolder;
-		color: blue;
+		color: white;
 	}
 
 	.contenedor-mensaje-principal p:last-child {
@@ -202,11 +203,12 @@ body {
 		font-weight: bolder;
 		font-size: 1rem;
 		line-height: 1rem;
-		color: red;
+		color: white;
 	}
+
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) { /* ? pantallas desde lg */
 	.contenedor-mensaje-principal {
 		/* ? Ajusta el estilo del contenedor del mensaje principal */
 		display: flex;
@@ -215,6 +217,8 @@ body {
 		height: auto;
 		justify-content: center;
 		margin-top: 5rem;
+		max-width: max-content;
+		border: solid 10px red;
 	}
 
 	.contenedor-mensaje-principal p:first-child {
@@ -226,7 +230,7 @@ body {
 		line-height: 5rem;
 		font-family: raleway, sans-serif;
 		font-weight: bolder;
-		color: palevioletred;
+		color: white;
 	}
 
 	.contenedor-mensaje-principal p:last-child {
@@ -238,56 +242,65 @@ body {
 		font-weight: 600;
 		font-size: 2rem;
 		line-height: 2rem;
-		color: red;
+		color: white;
 	}
 }
 
-.icono {
-	/* ? Estilo a los botones prev y next del carrusel */
-	background-color: rgba(255, 255, 255, 0.2);
-	height: 7rem;
-	width: 4rem;
-	left: 0;
-	right: 0;
-}
-
-.control-izq,
-.control-der {
-	/* ? Estilo al contenedor de los botones del carrusel */
-	width: 3rem;
-}
-
-.icono:hover {
-	/* ? Estilo al contenedor de los botones del carrusel */
-	background-color: white;
-	color: gray;
-}
-
-.carrusel {
-	/* ? Ajuste del contenedor del carrusel */
-	margin: 0;
-	padding: 0;
-	position: relative;
+.contenedor-carrusel{
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	z-index: -1;
 }
 
 .contenedor-capa {
 	/* ? Capa de color sobre el carrusel */
 	position: absolute;
-	margin: 0;
-	padding: 0;
-	z-index: 1;
+	top: 0;
 	width: 100%; /* ? ocupa el ancho de la pantalla */
 	height: 100%;
 	background-color: rgba(4, 14, 39, 0.5);
+	z-index: 1;
 }
 
-.contenedor-capa ~ img {
-	/* ? Permite ajustar el carrusel en versiones móviles */
-	width: 100%;
+.imagen{
+	z-index: 0;
 }
 
-.contenedor-carrusel-titulo-navbar {
+.carrusel{
+	position: relative;
+}
+
+.contenedor-icono{
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100px;
+	background-color: salmon;
+	z-index: 2;
 }
+
+.icono{
+	height: 40px;
+	width: 25px;
+	display: flex;
+	align-content: center;
+}
+
+.left{
+	left: 0;
+}
+
+.right{
+	right: 0;
+	transform: scaleX(-1);
+}
+
+.contenedor-icono:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
