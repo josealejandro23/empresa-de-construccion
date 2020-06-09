@@ -26,6 +26,7 @@ body {
 	height: auto;
 	width: 100vw;
 	max-width: 1920px;
+	z-index: 2;
 }
 
 .boton-superior {
@@ -58,6 +59,7 @@ body {
 	height: 9rem;
 	width: 100vw;
 	max-width: 1920px;
+	z-index: 2;
 }
 
 .contacto {
@@ -89,7 +91,6 @@ body {
 	/* ? Ajuste del navbar para ubicarlo de forma flotante */
 	width: 100%;
 	height: 5rem;
-	z-index: 1;
 	margin-top: -2rem;
 }
 
@@ -99,6 +100,7 @@ body {
 	font-size: 1rem;
 	font-weight: 500;
 	border-radius: 0.7rem;
+	z-index: 3;
 }
 
 .navbar-nav .nav-item .nav-link,
@@ -192,6 +194,7 @@ body {
 		font-family: raleway, sans-serif;
 		font-weight: bolder;
 		color: white;
+		z-index: 2;
 	}
 
 	.contenedor-mensaje-principal p:last-child {
@@ -204,6 +207,7 @@ body {
 		font-size: 1rem;
 		line-height: 1rem;
 		color: white;
+		z-index: 2;
 	}
 
 }
@@ -216,9 +220,8 @@ body {
 		text-align: center;
 		height: auto;
 		justify-content: center;
-		margin-top: 5rem;
-		max-width: max-content;
-		border: solid 10px red;
+		margin: 5rem auto 0 auto;
+		width: 95%;
 	}
 
 	.contenedor-mensaje-principal p:first-child {
@@ -226,11 +229,12 @@ body {
 		margin: 0;
 		padding: 0;
 		text-transform: uppercase;
-		font-size: 5rem;
-		line-height: 5rem;
+		font-size: 4.8rem;
+		line-height: 4.8rem;
 		font-family: raleway, sans-serif;
 		font-weight: bolder;
 		color: white;
+		z-index: 2;
 	}
 
 	.contenedor-mensaje-principal p:last-child {
@@ -243,15 +247,13 @@ body {
 		font-size: 2rem;
 		line-height: 2rem;
 		color: white;
+		z-index: 2;
 	}
 }
 
 .contenedor-carrusel{
 	position: absolute;
 	top: 0;
-	display: flex;
-	justify-content: center;
-	z-index: -1;
 }
 
 .contenedor-capa {
@@ -263,44 +265,3 @@ body {
 	background-color: rgba(4, 14, 39, 0.5);
 	z-index: 1;
 }
-
-.imagen{
-	z-index: 0;
-}
-
-.carrusel{
-	position: relative;
-}
-
-.contenedor-icono{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	width: 100px;
-	background-color: salmon;
-	z-index: 2;
-}
-
-.icono{
-	height: 40px;
-	width: 25px;
-	display: flex;
-	align-content: center;
-}
-
-.left{
-	left: 0;
-}
-
-.right{
-	right: 0;
-	transform: scaleX(-1);
-}
-
-.contenedor-icono:hover{
-	background-color: rgba(0, 0, 0, 0.5);
-}
-
