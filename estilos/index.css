@@ -23,7 +23,7 @@ body {
 	color: white;
 	margin: 0;
 	padding: 0;
-	height: auto;
+	height: 4rem;
 	width: 100vw;
 	max-width: 1920px;
 	z-index: 2;
@@ -91,20 +91,22 @@ body {
 	/* ? Ajuste del navbar para ubicarlo de forma flotante */
 	width: 100%;
 	height: 5rem;
-	margin-top: -2rem;
+	margin-top: -2.5rem;
 }
 
 .navbar-menu .navbar {
 	/* ? Estilos de letra y tamaño al navbar menu */
 	font-family: raleway, sans-serif;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-weight: 500;
 	border-radius: 0.7rem;
+	height: 5rem;
 	z-index: 3;
 }
 
 .navbar-nav .nav-item .nav-link,
 .dropdown-item {
+	font-size: 1.2rem;
 	color: rgba(0, 0, 0, 0.5); /* ? Color de las letras de la barra de menú */
 }
 
@@ -131,7 +133,8 @@ body {
 	margin-right: 1rem;
 }
 
-@media (max-width: 767px) { /* ? pantallas menores a lg */
+@media (max-width: 767px) {
+	/* ? pantallas menores a lg */
 	/* ? Ajuste de elementos para pantallas inferiores a LG  */
 	.navbar-menu .navbar {
 		/* ? ajuste de navbar */
@@ -170,7 +173,8 @@ body {
 		padding: 0;
 	}
 
-	.mensaje-principal { /* ? ajusta el contenedor de titulos para pantallas pequeñas */
+	.mensaje-principal {
+		/* ? ajusta el contenedor de titulos para pantallas pequeñas */
 		max-height: 60vh;
 	}
 
@@ -181,7 +185,7 @@ body {
 		text-align: center;
 		height: auto;
 		justify-content: center;
-		margin-top: 3rem;
+		margin-top: 1rem;
 	}
 
 	.contenedor-mensaje-principal p:first-child {
@@ -189,8 +193,8 @@ body {
 		margin: 0;
 		padding: 0;
 		text-transform: uppercase;
-		font-size: 2.5rem;
-		line-height: 3rem;
+		font-size: 2rem;
+		line-height: 2rem;
 		font-family: raleway, sans-serif;
 		font-weight: bolder;
 		color: white;
@@ -199,7 +203,7 @@ body {
 
 	.contenedor-mensaje-principal p:last-child {
 		/* ? Estilos para el subtítulo principal */
-		margin-top: 2rem;
+		margin-top: 0.5rem;
 		padding: 0;
 		text-transform: uppercase;
 		font-family: raleway, sans-serif;
@@ -208,11 +212,26 @@ body {
 		line-height: 1rem;
 		color: white;
 		z-index: 2;
+		margin-bottom: 0;
 	}
 
+	.boton-principal { /* ? Estilos del botón principal */
+		display: flex;
+		align-items: center;
+		padding: 0.7rem;
+		z-index: 3;
+		height: auto;
+		width: auto;
+		font-family: raleway, sans-serif;
+		font-size: 1rem;
+		background-color: #f0542c;
+		color: white;
+		border: none;
+	}
 }
 
-@media (min-width: 768px) { /* ? pantallas desde lg */
+@media (min-width: 768px) {
+	/* ? pantallas desde lg */
 	.contenedor-mensaje-principal {
 		/* ? Ajusta el estilo del contenedor del mensaje principal */
 		display: flex;
@@ -220,7 +239,7 @@ body {
 		text-align: center;
 		height: auto;
 		justify-content: center;
-		margin: 5rem auto 0 auto;
+		margin: 4rem auto 0 auto;
 		width: 95%;
 	}
 
@@ -248,12 +267,27 @@ body {
 		line-height: 2rem;
 		color: white;
 		z-index: 2;
+		margin-bottom: 3rem;
+	}
+
+	.boton-principal {  /* ? estilos del botón principal */
+		display: flex;
+		align-items: center;
+		z-index: 3;
+		height: 5rem;
+		width: auto;
+		padding: 3rem;
+		font-family: raleway, sans-serif;
+		font-size: 1.5rem;
+		background-color: #f0542c;
+		color: white;
+		border: none;
 	}
 }
 
-.contenedor-carrusel{
+.contenedor-carrusel {  /* ? ubicación del carrusel en el dom */
 	position: absolute;
-	top: 0;
+	top: 4rem;
 }
 
 .contenedor-capa {
@@ -264,4 +298,23 @@ body {
 	height: 100%;
 	background-color: rgba(4, 14, 39, 0.5);
 	z-index: 1;
+}
+
+.boton-principal:hover { /* ? efecto al hacer hover sobre el botón principal */
+	background-color: #040e27;
+}
+
+.carousel-control-prev{  /* ? ubica la flecha prev del carrusel a la izq */
+	justify-content: start;
+}
+
+.carousel-control-next{/* ? ubica la flecha next del carrusel a la derecha */
+
+	justify-content: flex-end;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{  /* ? Tamaño del contenedor siguiente y prev del carrusel */
+	height: 8rem; 
+	width: 3rem;
+	background-color: rgba(0, 0, 0, 0.5);
 }
