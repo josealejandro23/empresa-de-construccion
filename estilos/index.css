@@ -240,6 +240,10 @@ body {
 		margin-top: 1rem;
 		margin-bottom: 0;
 	}
+
+	.contenedor-nosotros{ /* ? situa el contenedor de la sección nosotros */
+		margin-top: 0rem;
+	}
 }
 
 @media (min-width: 768px) {  /* ? pantallas desde lg */
@@ -312,6 +316,10 @@ body {
 		border: none;
 		padding: 2rem;
 	}
+
+	.contenedor-nosotros{ /* ? situa el contenedor de la sección nosotros */
+		margin-top: 7rem;
+	}
 }
 
 .card .card-title{ /* ? Estilos de los títulos del cardgroup */
@@ -365,3 +373,38 @@ body {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
+.patron{ /* ? Ubica la imagen de adorno para la foto de la sección nosotros */
+	background-image: url('../images/patron.png');
+	width: 155px;
+	height: 185px;
+	position: absolute;
+	box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2);
+	left: -10px;
+	top: -50px;
+}
+
+.foto-nosotros{ /* ? Ubica la imagen del conentedor nosotros */
+	background-image: url('../images/nosotros.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 550px;
+	width: 490px;
+	position: absolute;
+	max-width: 90vw; /* ? para pantallas móviles */
+}
+
+.titulo-nosotros{
+	font-family: raleway, sans-serif;
+	text-transform: capitalize;
+	color: #040e27;
+	font-size: 2.8rem;
+	font-weight: 3rem;
+}
+
+.texto-nosotros p:first-of-type{
+	font-family: raleway;
+	color: #040e27;
+	font-size: 1.5rem;
+	font-weight: 100;
+}
