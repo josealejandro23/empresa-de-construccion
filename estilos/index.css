@@ -11,12 +11,14 @@ body {
 	padding: 0;
 }
 
-.barra-superior {
-	/* ? Ajusta la barra superior */
+.contenedor-barra-superior{ /* ? Estilo del contenedor de la barra superior */
+	background-color: #040e27;
+}
+
+.barra-superior { /* ? Ajusta la barra superior */
 	display: flex;
 	align-items: center;
 	padding-bottom: 1rem;
-	background-color: #040e27;
 	font-family: raleway, sans-serif;
 	font-weight: 500;
 	font-size: 1rem;
@@ -133,9 +135,7 @@ body {
 	margin-right: 1rem;
 }
 
-@media (max-width: 767px) {
-	/* ? pantallas menores a lg */
-	/* ? Ajuste de elementos para pantallas inferiores a LG  */
+@media (max-width: 767px) {  /* ? Ajuste de elementos para pantallas inferiores a LG  */
 	.navbar-menu .navbar {
 		/* ? ajuste de navbar */
 		background-color: #040e27 !important;
@@ -228,10 +228,25 @@ body {
 		color: white;
 		border: none;
 	}
+
+	.card-group{  /* ? Ajuste cardgroup para visualización vertical */
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card{ /* ? Ajuste del contenedor card para visualización adecuada */
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-top: 1rem;
+		margin-bottom: 0;
+	}
 }
 
-@media (min-width: 768px) {
-	/* ? pantallas desde lg */
+@media (min-width: 768px) {  /* ? pantallas desde lg */
+	.imagen{  /* ? Ajuste de tamaño máximo del carrusel, IMPORTANTE */
+		max-height: 720px;
+	}
+
 	.contenedor-mensaje-principal {
 		/* ? Ajusta el estilo del contenedor del mensaje principal */
 		display: flex;
@@ -283,6 +298,37 @@ body {
 		color: white;
 		border: none;
 	}
+
+	.contenedor-cardgroup{ /* ? Ajusta la posición del cardgroup */
+		margin-top: 9rem;
+	}
+
+	.card{  /* ? Estilos de las tarjetas del cardgroup */
+		z-index: 2;
+		font-family: raleway, sans-serif;
+		font-size: 1.2rem;
+		color: rgba(0, 0, 0, 0.5);
+		text-align: center;
+		border: none;
+		padding: 2rem;
+	}
+}
+
+.card .card-title{ /* ? Estilos de los títulos del cardgroup */
+	color: black;
+	font-size: 2rem;
+	margin-top: 5rem;
+}	
+
+.icono-card{  /* ? Estilos de los textos del cardgroup */
+	-webkit-text-stroke: 2px #f0542c;
+	color: white;
+	font-size: 5rem;
+	margin-top: 3rem;
+}
+
+.card:hover{ /* ? Ajusta la sombra al hacer hover sobre una tarjeta del cardgroup */
+	box-shadow: inset 5px -5px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
 .contenedor-carrusel {  /* ? ubicación del carrusel en el dom */
@@ -318,3 +364,4 @@ body {
 	width: 3rem;
 	background-color: rgba(0, 0, 0, 0.5);
 }
+
