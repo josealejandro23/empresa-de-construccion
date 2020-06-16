@@ -240,10 +240,6 @@ body {
 		margin-top: 1rem;
 		margin-bottom: 0;
 	}
-
-	.contenedor-nosotros{ /* ? situa el contenedor de la sección nosotros */
-		margin-top: 0rem;
-	}
 }
 
 @media (min-width: 768px) {  /* ? pantallas desde lg */
@@ -304,7 +300,7 @@ body {
 	}
 
 	.contenedor-cardgroup{ /* ? Ajusta la posición del cardgroup */
-		margin-top: 9rem;
+		margin-top: 5rem;
 	}
 
 	.card{  /* ? Estilos de las tarjetas del cardgroup */
@@ -318,7 +314,7 @@ body {
 	}
 
 	.contenedor-nosotros{ /* ? situa el contenedor de la sección nosotros */
-		margin-top: 7rem;
+		margin-top: 7rem;		
 	}
 }
 
@@ -381,6 +377,7 @@ body {
 	box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2);
 	left: -10px;
 	top: -50px;
+	z-index: -1;
 }
 
 .foto-nosotros{ /* ? Ubica la imagen del conentedor nosotros */
@@ -390,21 +387,27 @@ body {
 	background-repeat: no-repeat;
 	height: 550px;
 	width: 490px;
-	position: absolute;
 	max-width: 90vw; /* ? para pantallas móviles */
 }
 
-.titulo-nosotros{
+.titulo-nosotros{  /* ? Estilo título del área nosotros */
 	font-family: raleway, sans-serif;
 	text-transform: capitalize;
 	color: #040e27;
 	font-size: 2.8rem;
-	font-weight: 3rem;
 }
 
-.texto-nosotros p:first-of-type{
+.texto-nosotros p:first-of-type{ /* ? Estilo texto principal área nosotros */
 	font-family: raleway;
 	color: #040e27;
 	font-size: 1.5rem;
 	font-weight: 100;
+}
+
+.texto-nosotros p:last-of-type{
+	font-family: raleway, sans-serif;
+	color: #596672;
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 2rem;
 }
