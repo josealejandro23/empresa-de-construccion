@@ -229,7 +229,14 @@ body {
 		border: none;
 	}
 
+	.contenedor-carrusel {  /* ? ubicación del carrusel en el dom */
+		position: absolute;
+		top: 4rem;
+		z-index: 0;
+	}
+
 	.card-group{  /* ? Ajuste cardgroup para visualización vertical */
+		margin-top: 5rem;
 		display: flex;
 		flex-direction: column;
 	}
@@ -299,6 +306,11 @@ body {
 		border: none;
 	}
 
+	.contenedor-carrusel {  /* ? ubicación del carrusel en el dom */
+		position: absolute;
+		top: 4rem;
+	}
+
 	.contenedor-cardgroup{ /* ? Ajusta la posición del cardgroup */
 		margin-top: 5rem;
 	}
@@ -333,11 +345,6 @@ body {
 
 .card:hover{ /* ? Ajusta la sombra al hacer hover sobre una tarjeta del cardgroup */
 	box-shadow: inset 5px -5px 15px 5px rgba(0, 0, 0, 0.2);
-}
-
-.contenedor-carrusel {  /* ? ubicación del carrusel en el dom */
-	position: absolute;
-	top: 4rem;
 }
 
 .contenedor-capa {
@@ -404,7 +411,7 @@ body {
 	font-weight: 100;
 }
 
-.texto-nosotros p:last-of-type{
+.texto-nosotros p:last-of-type{  /* ? Estilos texto secundaroi área nosotros */
 	font-family: raleway, sans-serif;
 	color: #596672;
 	font-size: 1.2rem;
