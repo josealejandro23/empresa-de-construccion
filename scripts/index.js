@@ -2,47 +2,20 @@ let x = $(document);
 x.ready(inicio);
 
 function inicio() {
-	let x = $("#left");
-	x.click(retroceder);
-	x = $("#right");
-	x.click(avanzar);
-	var p = 1;
+	let item = $(".item"); 
+	item.hover(ingreso, salida); /* ? añade estilos al hacer hover sobre el owl carousel */
+}
 
-	function retroceder() {
-		let x = $("#imagen");
-		if (p == 1) {
-			x.html('<img src="images/agua3.jpg" class="imagen" alt="" />');
-			p = 3;
-			return;
-		}
-		if (p == 2) {
-			x.html('<img src="images/agua1.jpg" class="imagen" alt="" />');
-			p = 1;
-			return;
-		}
-		if (p == 3) {
-			x.html('<img src="images/agua2.jpg" class="imagen" alt="" />');
-			p = 2;
-			return;
-		}
-	}
+function ingreso() {
+	$(this).find("h3").removeClass("titulo-hoverOut");
+	$('img',this).removeClass('img-out');
+	$(this).find("h3").addClass("titulo-hoverIn");
+	$('img',this).addClass('img-in');
+}
 
-	function avanzar() {
-		let x = $("#imagen");
-		if (p == 1) {
-			x.html('<img src="images/agua2.jpg" class="imagen" alt="" />');
-			p = 2;
-			return;
-		}
-		if (p == 2) {
-			x.html('<img src="images/agua3.jpg" class="imagen" alt="" />');
-			p = 3;
-			return;
-		}
-		if (p == 3) {
-			x.html('<img src="images/agua1.jpg" class="imagen" alt="" />');
-			p = 1;
-			return;
-		}
-	}
+function salida() {
+	$("h3", this).removeClass("titulo-hoverIn");
+	$('img',this).removeClass('img-in');
+	$(this).children("h3").addClass("titulo-hoverOut");
+	$('img',this).addClass('img-out');
 }
