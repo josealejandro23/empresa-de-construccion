@@ -268,7 +268,7 @@ body {
 		padding: 1rem;
 	}
 
-	.contenedor-owlcarousel .item{
+	.contenedor-owlcarousel .item{ /* ? Ajusta el pading para el owlcarousel */
 		padding: 1rem;
 	}
 }
@@ -363,7 +363,7 @@ body {
 		margin-bottom: 3rem;
 	}
 
-	.contenedor-owlcarousel .item{
+	.contenedor-owlcarousel .item{ /* ? Elimina el padding para pantallas pequeñas del owlcarousel */
 		padding: 0;
 	}
 }
@@ -548,3 +548,16 @@ body {
 	transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.contenedor-owlcarousel{
+	position: relative;
+}
+
+.patron2{ /* ? Ubica la imagen de adorno para la foto de la sección nosotros */
+	background-image: url('../images/patron.png');
+	width: 155px;
+	height: 185px;
+	position: absolute;
+	right: -10px;
+	top: -100px;
+	z-index: -1;
+}
