@@ -271,6 +271,20 @@ body {
 	.contenedor-owlcarousel .item{ /* ? Ajusta el pading para el owlcarousel */
 		padding: 1rem;
 	}
+
+	.navbar-proyectos{  /* ? Estilo navbar proyectos */
+		display: flex;
+		flex-direction: row;
+		transition-duration: 0.3s; 
+		text-decoration: none;
+		margin-left: 2rem;
+		color: #596672;
+		font-family: raleway, sans-serif;
+		font-size: 1.2rem;
+		font-weight: 500;
+		line-height: 1.5rem;
+		padding-left: 0;
+	}
 }
 
 @media (min-width: 992px) {  /* ? pantallas desde lg */
@@ -365,6 +379,17 @@ body {
 
 	.contenedor-owlcarousel .item{ /* ? Elimina el padding para pantallas pequeñas del owlcarousel */
 		padding: 0;
+	}
+
+	.navbar-proyectos li{  /* ? Estilo navbar proyectos */
+		transition-duration: 0.3s; 
+		text-decoration: none;
+		margin-left: 2rem;
+		color: #596672;
+		font-family: raleway, sans-serif;
+		font-size: 1.2rem;
+		font-weight: 500;
+		line-height: 1.5rem;
 	}
 }
 
@@ -560,17 +585,6 @@ body {
 	right: -10px;
 	top: -100px;
 	z-index: -1;
-}
-
-.navbar-proyectos li{  /* ? Estilo navbar proyectos */
-	transition-duration: 0.3s; 
-	text-decoration: none;
-	margin-left: 2rem;
-	color: #596672;
-	font-family: raleway, sans-serif;
-	font-size: 1.2rem;
-	font-weight: 500;
-	line-height: 1.5rem;
 }
 
 .navbar-proyectos li:hover{ /* ? Estilos al hacer hover sobre el navbar proyectos */
