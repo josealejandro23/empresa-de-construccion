@@ -597,3 +597,19 @@ body {
 .navbar-proyectos{ /*  ? Elimina el estilo de lista del navbar */
 	list-style-type: none;
 }
+
+.img-proyecto{  /* ? Ajusta el contenedor de las imagenes del área de proyecto */
+	max-height: fit-content;  /* ? Ajusta el tamaño máximo del contenedor al tamaño inicial de la imagen */
+	overflow: hidden; /* ? Al hacer zoom sobre la imagen oculta los bordes restantes que quedan fuera del contenedor */
+}
+
+.imgPro-in{  /* ? Esta clase se añade al hacer hover sobre el owl carousel y permite hacer zoom sobre cada imagen en particular */
+	transform: scale(1.2);
+	transition: 0.2s;
+	transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.imgPro-out{ /* ? Esta clase se añade al hacer hover sobre el owl carousel y retira el zoom sobre cada imagen en particular */
+	transform: scale(1);
+	transition: 0.2s;
+}
