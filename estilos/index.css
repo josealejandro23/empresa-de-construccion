@@ -548,7 +548,7 @@ body {
 	transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.contenedor-owlcarousel{
+.contenedor-owlcarousel{ /* ? permite ubicar la imagen patrón dentro del owlcarousel */
 	position: relative;
 }
 
@@ -560,4 +560,26 @@ body {
 	right: -10px;
 	top: -100px;
 	z-index: -1;
+}
+
+.navbar-proyectos li{  /* ? Estilo navbar proyectos */
+	transition-duration: 0.3s; 
+	text-decoration: none;
+	margin-left: 2rem;
+	color: #596672;
+	font-family: raleway, sans-serif;
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.5rem;
+}
+
+.navbar-proyectos li:hover{ /* ? Estilos al hacer hover sobre el navbar proyectos */
+	color: #f0542c;
+	transition: ease-in-out;
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+
+.navbar-proyectos{ /*  ? Elimina el estilo de lista del navbar */
+	list-style-type: none;
 }
