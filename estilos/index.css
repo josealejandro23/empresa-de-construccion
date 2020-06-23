@@ -616,12 +616,13 @@ body {
 
 .mensaje-proyecto{  /* ? Estilos del mensaje al hacer hover sobre las imágenes de proyectos */
 	width: 90%;
-	height: 30%;
-	padding: 1rem 3rem;
+	margin-left: 5%;
+	height: 5rem;
+	padding: 1.5rem 3rem;
 	border-radius: 0.3rem;
 	background-color: white;
-	position: relative;
-	margin-top: -25%;
+	position: absolute;
+	margin-top: -30%;
 	visibility: hidden; /* ? Inicializa el elemento como oculto */
 }
 
@@ -656,7 +657,7 @@ body {
 }
 
 .animate__animated.animate__fadeInUp { /* ? Velocidad de la clase de animated.css */
-	--animate-duration: 0.3s;
+	--animate-duration: 0.5s;
  }
 
  .animate__animated.animate__fadeOutDown{ /* ? Velocidad de la clase de animated.css */
