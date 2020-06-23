@@ -54,8 +54,8 @@ function salidaImg() {
 
 function verTodos() {
 	$(".img-proyecto")
-		.removeClass("ocultar-img-proyecto animate__animated animate__fadeOut")
-		.addClass("animate__animated animate__fadeIn");
+			.removeClass("ocultar-img-proyecto animate__animated animate__fadeOut")
+			.addClass("animate__animated animate__fadeIn");
 }
 
 function filtros() {
