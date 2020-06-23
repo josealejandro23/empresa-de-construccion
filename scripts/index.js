@@ -9,6 +9,11 @@ function inicio() {
 	); /* ? añade estilos al hacer hover sobre el owl carousel */
 	let img = $(".img-proyecto");
 	img.hover(ingresoImg, salidaImg);
+	let x = $("#todos");
+	x.click(verTodos);
+	$("#filtros").click(filtros);
+	$("#sistemas").click(sistemas);
+	$("#trampas").click(trampas);
 }
 
 function ingreso() {
@@ -28,13 +33,63 @@ function salida() {
 function ingresoImg() {
 	$("img", this).removeClass("imgPro-out");
 	$("img", this).addClass("imgPro-in");
-	$(".mensaje-proyecto", this).removeClass("animate__animated animate__fadeOutDown hide-mensaje-proyecto");
-	$(".mensaje-proyecto", this).addClass("animate__animated animate__fadeInUp show-mensaje-proyecto");
+	$(".mensaje-proyecto", this).removeClass(
+		"animate__animated animate__fadeOutDown hide-mensaje-proyecto"
+	);
+	$(".mensaje-proyecto", this).addClass(
+		"animate__animated animate__fadeInUp show-mensaje-proyecto"
+	);
 }
 
 function salidaImg() {
 	$("img", this).removeClass("imgPro-in");
 	$("img", this).addClass("imgPro-out");
-	$(".mensaje-proyecto", this).removeClass("animate__animated animate__fadeInUp show-mensaje-proyecto");
-	$(".mensaje-proyecto", this).addClass("animate__animated animate__fadeOutDown hide-mensaje-proyecto");
+	$(".mensaje-proyecto", this).removeClass(
+		"animate__animated animate__fadeInUp show-mensaje-proyecto"
+	);
+	$(".mensaje-proyecto", this).addClass(
+		"animate__animated animate__fadeOutDown hide-mensaje-proyecto"
+	);
+}
+
+function verTodos() {
+	$(".img-proyecto")
+		.removeClass("ocultar-img-proyecto animate__animated animate__fadeOut")
+		.addClass("animate__animated animate__fadeIn");
+}
+
+function filtros() {
+	$(".sistemas").addClass(
+		"animate__animated animate__fadeOut ocultar-img-proyecto"
+	);
+	$(".trampas").addClass(
+		"animate__animated animate__fadeOut ocultar-img-proyecto"
+	);
+	$(".filtros")
+		.removeClass("ocultar-img-proyecto animate__animated animate__fadeOut")
+		.addClass("animate__animated animate__fadeIn");
+}
+
+function trampas() {
+	$(".sistemas").addClass(
+		"animate__animated animate__fadeOut ocultar-img-proyecto"
+	);
+	$(".filtros").addClass(
+		"animate__animated animate__fadeOut ocultar-img-proyecto"
+	);
+	$(".trampas")
+		.removeClass("ocultar-img-proyecto animate__animated animate__fadeOut")
+		.addClass("animate__animated animate__fadeIn");
+}
+
+function sistemas() {
+	$(".filtros").addClass(
+		"animate__animated animate__fadeOut ocultar-img-proyecto"
+	);
+	$(".trampas").addClass(
+		"animate__animated animate__fadeOut ocultar-img-proyecto"
+	);
+	$(".sistemas")
+		.removeClass("ocultar-img-proyecto animate__animated animate__fadeOut")
+		.addClass("animate__animated animate__fadeIn");
 }
