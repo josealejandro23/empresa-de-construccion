@@ -601,6 +601,7 @@ body {
 .img-proyecto{  /* ? Ajusta el contenedor de las imagenes del área de proyecto */
 	max-height: fit-content;  /* ? Ajusta el tamaño máximo del contenedor al tamaño inicial de la imagen */
 	overflow: hidden; /* ? Al hacer zoom sobre la imagen oculta los bordes restantes que quedan fuera del contenedor */
+	position: relative;
 }
 
 .imgPro-in{  /* ? Esta clase se añade al hacer hover sobre el owl carousel y permite hacer zoom sobre cada imagen en particular */
@@ -612,4 +613,30 @@ body {
 .imgPro-out{ /* ? Esta clase se añade al hacer hover sobre el owl carousel y retira el zoom sobre cada imagen en particular */
 	transform: scale(1);
 	transition: 0.2s;
+}
+
+.mensaje-proyecto{
+	position: absolute;
+	width: 90%;
+	height: 30%;
+	padding: 1rem 3rem;
+	border: 1px solid red;
+	border-radius: 0.3rem;
+	background-color: white;
+	z-index: 19;
+}
+
+.mensaje-proyecto span:first-child{
+	color: #040e27;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+.mensaje-proyecto span:last-child{
+	background-color: #f0542c;
+	border-radius: 1.5rem;
+	width: 3rem;
+	height: 3re;
+	color: white;
+	font-size: 2rem;
 }
