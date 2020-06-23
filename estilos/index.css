@@ -664,15 +664,32 @@ body {
 	 --animation-duration:0.3s
  }
 
- .ocultar-img-proyecto{
+ .ocultar-img-proyecto{ /* ? Oculta las imagenes al filtrarlas en el área proyecto */
 	display: none;
 	transition: 10s;
  }
 
- .animate__animated.animate__fadeOut{
-	 --animation-duration: 3s;
- }
+.mensaje-proyecto i{ /* ? Color para las flechas dentro del mensaje de las imágenes de proyectos */
+	color: white;
+}
 
- .animate__animated.animate__fadeIn{
-	--animation-duration: 4s;
+.boton-proyectos{ /* ? Estilos de la etiqueta ancla del botón más proyectos */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 5rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	border: none;
+	background-color: #f0542c;
+	font-weight: 400;
+	color: white;
+	font-family: raleway, sans-serif;
+	font-size: 2rem;
+}
+
+.boton-proyectos:any-link{ /* ? Elimina las decoraciones del botón más proyectos */
+	text-decoration: none;
+	color: white;
 }
