@@ -601,7 +601,6 @@ body {
 .img-proyecto{  /* ? Ajusta el contenedor de las imagenes del área de proyecto */
 	max-height: fit-content;  /* ? Ajusta el tamaño máximo del contenedor al tamaño inicial de la imagen */
 	overflow: hidden; /* ? Al hacer zoom sobre la imagen oculta los bordes restantes que quedan fuera del contenedor */
-	position: relative;
 }
 
 .imgPro-in{  /* ? Esta clase se añade al hacer hover sobre el owl carousel y permite hacer zoom sobre cada imagen en particular */
@@ -615,28 +614,51 @@ body {
 	transition: 0.2s;
 }
 
-.mensaje-proyecto{
-	position: absolute;
+.mensaje-proyecto{  /* ? Estilos del mensaje al hacer hover sobre las imágenes de proyectos */
 	width: 90%;
 	height: 30%;
 	padding: 1rem 3rem;
-	border: 1px solid red;
 	border-radius: 0.3rem;
 	background-color: white;
-	z-index: 19;
+	position: relative;
+	margin-top: -25%;
+	visibility: hidden; /* ? Inicializa el elemento como oculto */
 }
 
-.mensaje-proyecto span:first-child{
+.mensaje-proyecto span:first-child{ /* ? Estilos del texto del mensaje de proyectos */
 	color: #040e27;
 	font-size: 1.4rem;
 	font-weight: 500;
 }
 
-.mensaje-proyecto span:last-child{
+.mensaje-proyecto span:last-child{ /* ? Estilo del icono "ver más" del mensaje proyecto */
 	background-color: #f0542c;
-	border-radius: 1.5rem;
+	border-radius: 1.5rem; /* ? Fondo redondeado, mitad del tamaño del elemento */
 	width: 3rem;
-	height: 3re;
+	height: 3rem;
 	color: white;
 	font-size: 2rem;
+	margin-top: -0.6rem; /* ? usado para ajustar la posición */
 }
+
+.mensaje-proyecto span:last-child:hover{ /* ? Hace que el cursor sea puntero al hacer hover sobre el ícono "ver más" del mensaje de proyectos */
+	cursor: pointer;
+}
+
+.hide-mensaje-proyecto{ /* ? Clase usada para ocultar el mensaje al salir de cada imágen de proyectos */
+	visibility: hidden;
+	transition: 0.4s;
+}
+
+.show-mensaje-proyecto{ /* ? Clase usada para mostrar el mensaje al hacer hover en cada imagen de proyectos */
+	visibility: visible;
+	transition: 0.4s;
+}
+
+.animate__animated.animate__fadeInUp { /* ? Velocidad de la clase de animated.css */
+	--animate-duration: 0.3s;
+ }
+
+ .animate__animated.animate__fadeOutDown{ /* ? Velocidad de la clase de animated.css */
+	 --animation-duration:0.3s
+ }

@@ -28,9 +28,13 @@ function salida() {
 function ingresoImg() {
 	$("img", this).removeClass("imgPro-out");
 	$("img", this).addClass("imgPro-in");
+	$(".mensaje-proyecto", this).removeClass("animate__animated animate__fadeOutDown hide-mensaje-proyecto");
+	$(".mensaje-proyecto", this).addClass("animate__animated animate__fadeInUp show-mensaje-proyecto");
 }
 
 function salidaImg() {
 	$("img", this).removeClass("imgPro-in");
 	$("img", this).addClass("imgPro-out");
+	$(".mensaje-proyecto", this).removeClass("animate__animated animate__fadeInUp show-mensaje-proyecto");
+	$(".mensaje-proyecto", this).addClass("animate__animated animate__fadeOutDown hide-mensaje-proyecto");
 }
