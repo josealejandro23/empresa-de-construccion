@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 html {
 	/* ? Fija la fuente en 14 */
@@ -11,11 +11,13 @@ body {
 	padding: 0;
 }
 
-.contenedor-barra-superior{ /* ? Estilo del contenedor de la barra superior */
+.contenedor-barra-superior {
+	/* ? Estilo del contenedor de la barra superior */
 	background-color: #040e27;
 }
 
-.barra-superior { /* ? Ajusta la barra superior */
+.barra-superior {
+	/* ? Ajusta la barra superior */
 	display: flex;
 	align-items: center;
 	padding-bottom: 1rem;
@@ -138,11 +140,12 @@ body {
 	margin-right: 1rem;
 }
 
-.navbar-nav{
+.navbar-nav {
 	background-color: white;
 }
 
-@media (max-width: 991px) {  /* ? Ajuste de elementos para pantallas inferiores a LG  */	
+@media (max-width: 991px) {
+	/* ? Ajuste de elementos para pantallas inferiores a LG  */
 	.navbar-menu .navbar {
 		/* ? ajuste de navbar */
 		background-color: #040e27 !important;
@@ -168,7 +171,8 @@ body {
 		padding-bottom: 1rem;
 	}
 
-	.navbar-menu { /* ? ajuste de posición del navbar */
+	.navbar-menu {
+		/* ? ajuste de posición del navbar */
 		margin: 0;
 		padding: 0;
 	}
@@ -221,7 +225,8 @@ body {
 		margin-bottom: 0;
 	}
 
-	.boton-principal { /* ? Estilos del botón principal */
+	.boton-principal {
+		/* ? Estilos del botón principal */
 		display: flex;
 		align-items: center;
 		padding: 0.7rem;
@@ -235,20 +240,23 @@ body {
 		border: none;
 	}
 
-	.contenedor-carrusel {  /* ? ubicación del carrusel en el dom */
+	.contenedor-carrusel {
+		/* ? ubicación del carrusel en el dom */
 		position: absolute;
 		top: 4rem;
 		z-index: -1; /* ! Este ajuste permite mostrar el cardgroup sobre el carrusel pero evita q se desplace el carrusel a mano para pantallas md e inferiores */
 	}
 
-	.card-group{  /* ? Ajuste cardgroup para visualización vertical */
+	.card-group {
+		/* ? Ajuste cardgroup para visualización vertical */
 		margin-top: 5rem;
 		display: flex;
 		flex-direction: column;
 		background-color: white;
 	}
 
-	.card{ /* ? Ajuste del contenedor card para visualización adecuada */
+	.card {
+		/* ? Ajuste del contenedor card para visualización adecuada */
 		padding-top: 0;
 		padding-bottom: 0;
 		margin-top: 1rem;
@@ -256,26 +264,29 @@ body {
 		background-color: white;
 	}
 
-	.contenedor-nosotros{
+	.contenedor-nosotros {
 		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 		padding-bottom: 1rem;
 		margin-bottom: 2rem;
 	}
 
-	.contenedor-boton-sobre-nosotros{ /* ? ubica el boton del área nosotros en el centro de la pantalla */
+	.contenedor-boton-sobre-nosotros {
+		/* ? ubica el boton del área nosotros en el centro de la pantalla */
 		display: flex;
 		justify-content: center;
 		padding: 1rem;
 	}
 
-	.contenedor-owlcarousel .item{ /* ? Ajusta el pading para el owlcarousel */
+	.contenedor-owlcarousel .item {
+		/* ? Ajusta el pading para el owlcarousel */
 		padding: 1rem;
 	}
 
-	.navbar-proyectos{  /* ? Estilo navbar proyectos */
+	.navbar-proyectos {
+		/* ? Estilo navbar proyectos */
 		display: flex;
 		flex-direction: row;
-		transition-duration: 0.3s; 
+		transition-duration: 0.3s;
 		text-decoration: none;
 		margin-left: 2rem;
 		color: #596672;
@@ -287,15 +298,17 @@ body {
 	}
 }
 
-@media (min-width: 992px) {  /* ? pantallas desde lg */
+@media (min-width: 992px) {
+	/* ? pantallas desde lg */
 	.navbar-menu {
 		/* ? Ajuste del navbar para ubicarlo de forma flotante */
 		width: 100%;
 		height: 5rem;
 		margin-top: -2.5rem;
 	}
-	
-	.imagen{  /* ? Ajuste de tamaño máximo del carrusel, IMPORTANTE */
+
+	.imagen {
+		/* ? Ajuste de tamaño máximo del carrusel, IMPORTANTE */
 		max-height: 720px;
 	}
 
@@ -337,7 +350,8 @@ body {
 		margin-bottom: 3rem;
 	}
 
-	.boton-principal {  /* ? estilos del botón principal */
+	.boton-principal {
+		/* ? estilos del botón principal */
 		display: flex;
 		align-items: center;
 		z-index: 3;
@@ -351,16 +365,19 @@ body {
 		border: none;
 	}
 
-	.contenedor-carrusel {  /* ? ubicación del carrusel en el dom */
+	.contenedor-carrusel {
+		/* ? ubicación del carrusel en el dom */
 		position: absolute;
 		top: 4rem;
 	}
 
-	.contenedor-cardgroup{ /* ? Ajusta la posición del cardgroup */
+	.contenedor-cardgroup {
+		/* ? Ajusta la posición del cardgroup */
 		margin-top: 5rem;
 	}
 
-	.card{  /* ? Estilos de las tarjetas del cardgroup */
+	.card {
+		/* ? Estilos de las tarjetas del cardgroup */
 		z-index: 2;
 		font-family: raleway, sans-serif;
 		font-size: 1.2rem;
@@ -370,19 +387,22 @@ body {
 		padding: 2rem;
 	}
 
-	.contenedor-nosotros{ /* ? situa el contenedor de la sección nosotros */
-		margin-top: 7rem;		
+	.contenedor-nosotros {
+		/* ? situa el contenedor de la sección nosotros */
+		margin-top: 7rem;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 		padding-bottom: 5rem;
 		margin-bottom: 3rem;
 	}
 
-	.contenedor-owlcarousel .item{ /* ? Elimina el padding para pantallas pequeñas del owlcarousel */
+	.contenedor-owlcarousel .item {
+		/* ? Elimina el padding para pantallas pequeñas del owlcarousel */
 		padding: 0;
 	}
 
-	.navbar-proyectos li{  /* ? Estilo navbar proyectos */
-		transition-duration: 0.3s; 
+	.navbar-proyectos li {
+		/* ? Estilo navbar proyectos */
+		transition-duration: 0.3s;
 		text-decoration: none;
 		margin-left: 2rem;
 		color: #596672;
@@ -393,20 +413,23 @@ body {
 	}
 }
 
-.card .card-title{ /* ? Estilos de los títulos del cardgroup */
+.card .card-title {
+	/* ? Estilos de los títulos del cardgroup */
 	color: black;
 	font-size: 2rem;
 	margin-top: 5rem;
-}	
+}
 
-.icono-card{  /* ? Estilos de los textos del cardgroup */
+.icono-card {
+	/* ? Estilos de los textos del cardgroup */
 	-webkit-text-stroke: 2px #f0542c;
 	color: white;
 	font-size: 5rem;
 	margin-top: 3rem;
 }
 
-.card:hover{ /* ? Ajusta la sombra al hacer hover sobre una tarjeta del cardgroup */
+.card:hover {
+	/* ? Ajusta la sombra al hacer hover sobre una tarjeta del cardgroup */
 	box-shadow: inset 5px -5px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -420,27 +443,33 @@ body {
 	z-index: 1;
 }
 
-.boton-principal:hover { /* ? efecto al hacer hover sobre el botón principal */
+.boton-principal:hover {
+	/* ? efecto al hacer hover sobre el botón principal */
 	background-color: #040e27;
 }
 
-.carousel-control-prev{  /* ? ubica la flecha prev del carrusel a la izq */
+.carousel-control-prev {
+	/* ? ubica la flecha prev del carrusel a la izq */
 	justify-content: start;
 }
 
-.carousel-control-next{/* ? ubica la flecha next del carrusel a la derecha */
+.carousel-control-next {
+	/* ? ubica la flecha next del carrusel a la derecha */
 
 	justify-content: flex-end;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon{  /* ? Tamaño del contenedor siguiente y prev del carrusel */
-	height: 8rem; 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	/* ? Tamaño del contenedor siguiente y prev del carrusel */
+	height: 8rem;
 	width: 3rem;
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-.patron{ /* ? Ubica la imagen de adorno para la foto de la sección nosotros */
-	background-image: url('../images/patron.png');
+.patron {
+	/* ? Ubica la imagen de adorno para la foto de la sección nosotros */
+	background-image: url("../images/patron.png");
 	width: 155px;
 	height: 185px;
 	position: absolute;
@@ -450,8 +479,9 @@ body {
 	z-index: -1;
 }
 
-.foto-nosotros{ /* ? Ubica la imagen del conentedor nosotros */
-	background-image: url('../images/nosotros.png');
+.foto-nosotros {
+	/* ? Ubica la imagen del conentedor nosotros */
+	background-image: url("../images/nosotros.png");
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -460,21 +490,24 @@ body {
 	max-width: 90vw; /* ? para pantallas móviles */
 }
 
-.titulo-nosotros{  /* ? Estilo título del área nosotros */
+.titulo-nosotros {
+	/* ? Estilo título del área nosotros */
 	font-family: raleway, sans-serif;
 	text-transform: capitalize;
 	color: #040e27;
 	font-size: 2.8rem;
 }
 
-.texto-nosotros p:first-of-type{ /* ? Estilo texto principal área nosotros */
+.texto-nosotros p:first-of-type {
+	/* ? Estilo texto principal área nosotros */
 	font-family: raleway;
 	color: #040e27;
 	font-size: 1.5rem;
 	font-weight: 100;
 }
 
-.texto-nosotros p:last-of-type{  /* ? Estilos texto secundaroi área nosotros */
+.texto-nosotros p:last-of-type {
+	/* ? Estilos texto secundaroi área nosotros */
 	font-family: raleway, sans-serif;
 	color: #596672;
 	font-size: 1.2rem;
@@ -483,7 +516,8 @@ body {
 	margin-bottom: 0rem;
 }
 
-.boton-nosotros {  /* ? estilos del botón principal */
+.boton-nosotros {
+	/* ? estilos del botón principal */
 	display: flex;
 	align-items: center;
 	height: 5rem;
@@ -496,22 +530,26 @@ body {
 	border: none;
 }
 
-.boton-nosotros:hover{ /* ? Estilo del boton área nosotros */
+.boton-nosotros:hover {
+	/* ? Estilo del boton área nosotros */
 	border: #040e27;
 	background-color: #040e27;
 }
 
-.enlace-nosotros:link{  /* ? retirar subrayado boton área nosotros */
+.enlace-nosotros:link {
+	/* ? retirar subrayado boton área nosotros */
 	text-decoration: none;
 }
 
-.contenedor-servicios{  /* ? Estilo del contendor de nuestros servicios */
+.contenedor-servicios {
+	/* ? Estilo del contendor de nuestros servicios */
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	padding-bottom: 3rem;
 	margin-bottom: 3rem;
 }
 
-.titulo-principal{ /* ? Estilo de títulos nuestros servicios, contacto, etc */
+.titulo-principal {
+	/* ? Estilo de títulos nuestros servicios, contacto, etc */
 	font-family: raleway, sans-serif;
 	font-size: 3rem;
 	color: #040e27;
@@ -519,25 +557,29 @@ body {
 	line-height: 1.2;
 }
 
-.contenedor-owlcarousel h3{  /* ? Estilos titulos owlcarousel */
+.contenedor-owlcarousel h3 {
+	/* ? Estilos titulos owlcarousel */
 	font-size: 1.8rem;
 	font-weight: 600;
 	line-height: 2.2rem;
 }
 
-.titulo-hoverIn{  /* ? Añade un estilo al hacer hover sobre el owl carousel */
+.titulo-hoverIn {
+	/* ? Añade un estilo al hacer hover sobre el owl carousel */
 	transition-duration: 200ms;
 	transition-timing-function: cubic-bezier();
 	color: #f0542c;
 }
 
-.titulo-hoverOut{ /* ? Añade un estilo al hacer hover sobre el owl carousel */
+.titulo-hoverOut {
+	/* ? Añade un estilo al hacer hover sobre el owl carousel */
 	transition-duration: 200ms;
 	transition-timing-function: cubic-bezier();
 	color: #040e27;
 }
 
-.contenedor-owlcarousel p:first-child{ /* ? Estilo texto owl carousel */
+.contenedor-owlcarousel p:first-child {
+	/* ? Estilo texto owl carousel */
 	text-align: justify;
 	color: #596672;
 	font-weight: 400;
@@ -545,40 +587,45 @@ body {
 	line-height: 2rem;
 }
 
-.contenedor-owlcarousel a:any-link{  /* ? Estilo link olwcarousel */
-		text-decoration: none;
-		color: #f0542c;
-		font-size: 1.2rem;
-		font-weight: 600;
-		line-height: 2rem;
-		text-align: left;
-		
-} 
+.contenedor-owlcarousel a:any-link {
+	/* ? Estilo link olwcarousel */
+	text-decoration: none;
+	color: #f0542c;
+	font-size: 1.2rem;
+	font-weight: 600;
+	line-height: 2rem;
+	text-align: left;
+}
 
-.contenedor-img-owlcarousel{  /* ? Ajusta el contenedor de las imagenes del owl carousel */
-	max-height: fit-content;  /* ? Ajusta el tamaño máximo del contenedor al tamaño inicial de la imagen */
+.contenedor-img-owlcarousel {
+	/* ? Ajusta el contenedor de las imagenes del owl carousel */
+	max-height: fit-content; /* ? Ajusta el tamaño máximo del contenedor al tamaño inicial de la imagen */
 	overflow: hidden; /* ? Al hacer zoom sobre la imagen oculta los bordes restantes que quedan fuera del contenedor */
 	margin: 1rem;
 }
 
-.img-in{  /* ? Esta clase se añade al hacer hover sobre el owl carousel y permite hacer zoom sobre cada imagen en particular */
+.img-in {
+	/* ? Esta clase se añade al hacer hover sobre el owl carousel y permite hacer zoom sobre cada imagen en particular */
 	transform: scale(1.3);
 	transition: 0.3s;
 	transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.img-out{ /* ? Esta clase se añade al hacer hover sobre el owl carousel y retira el zoom sobre cada imagen en particular */
+.img-out {
+	/* ? Esta clase se añade al hacer hover sobre el owl carousel y retira el zoom sobre cada imagen en particular */
 	transform: scale(1);
 	transition: 0.3s;
 	transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.contenedor-owlcarousel{ /* ? permite ubicar la imagen patrón dentro del owlcarousel */
+.contenedor-owlcarousel {
+	/* ? permite ubicar la imagen patrón dentro del owlcarousel */
 	position: relative;
 }
 
-.patron2{ /* ? Ubica la imagen de adorno para la foto de la sección nosotros */
-	background-image: url('../images/patron.png');
+.patron2 {
+	/* ? Ubica la imagen de adorno para la foto de la sección nosotros */
+	background-image: url("../images/patron.png");
 	width: 155px;
 	height: 185px;
 	position: absolute;
@@ -587,34 +634,40 @@ body {
 	z-index: -1;
 }
 
-.navbar-proyectos li:hover{ /* ? Estilos al hacer hover sobre el navbar proyectos */
+.navbar-proyectos li:hover {
+	/* ? Estilos al hacer hover sobre el navbar proyectos */
 	color: #f0542c;
 	transition: ease-in-out;
 	transition-duration: 0.3s;
 	cursor: pointer;
 }
 
-.navbar-proyectos{ /*  ? Elimina el estilo de lista del navbar */
+.navbar-proyectos {
+	/*  ? Elimina el estilo de lista del navbar */
 	list-style-type: none;
 }
 
-.img-proyecto{  /* ? Ajusta el contenedor de las imagenes del área de proyecto */
-	max-height: fit-content;  /* ? Ajusta el tamaño máximo del contenedor al tamaño inicial de la imagen */
+.img-proyecto {
+	/* ? Ajusta el contenedor de las imagenes del área de proyecto */
+	max-height: fit-content; /* ? Ajusta el tamaño máximo del contenedor al tamaño inicial de la imagen */
 	overflow: hidden; /* ? Al hacer zoom sobre la imagen oculta los bordes restantes que quedan fuera del contenedor */
 }
 
-.imgPro-in{  /* ? Esta clase se añade al hacer hover sobre el owl carousel y permite hacer zoom sobre cada imagen en particular */
+.imgPro-in {
+	/* ? Esta clase se añade al hacer hover sobre el owl carousel y permite hacer zoom sobre cada imagen en particular */
 	transform: scale(1.2);
 	transition: 0.2s;
 	transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.imgPro-out{ /* ? Esta clase se añade al hacer hover sobre el owl carousel y retira el zoom sobre cada imagen en particular */
+.imgPro-out {
+	/* ? Esta clase se añade al hacer hover sobre el owl carousel y retira el zoom sobre cada imagen en particular */
 	transform: scale(1);
 	transition: 0.2s;
 }
 
-.mensaje-proyecto{  /* ? Estilos del mensaje al hacer hover sobre las imágenes de proyectos */
+.mensaje-proyecto {
+	/* ? Estilos del mensaje al hacer hover sobre las imágenes de proyectos */
 	width: 90%;
 	margin-left: 5%;
 	height: 5rem;
@@ -626,13 +679,15 @@ body {
 	visibility: hidden; /* ? Inicializa el elemento como oculto */
 }
 
-.mensaje-proyecto span:first-child{ /* ? Estilos del texto del mensaje de proyectos */
+.mensaje-proyecto span:first-child {
+	/* ? Estilos del texto del mensaje de proyectos */
 	color: #040e27;
 	font-size: 1.4rem;
 	font-weight: 500;
 }
 
-.mensaje-proyecto span:last-child{ /* ? Estilo del icono "ver más" del mensaje proyecto */
+.mensaje-proyecto span:last-child {
+	/* ? Estilo del icono "ver más" del mensaje proyecto */
 	background-color: #f0542c;
 	border-radius: 1.5rem; /* ? Fondo redondeado, mitad del tamaño del elemento */
 	width: 3rem;
@@ -642,38 +697,46 @@ body {
 	margin-top: -0.6rem; /* ? usado para ajustar la posición */
 }
 
-.mensaje-proyecto span:last-child:hover{ /* ? Hace que el cursor sea puntero al hacer hover sobre el ícono "ver más" del mensaje de proyectos */
+.mensaje-proyecto span:last-child:hover {
+	/* ? Hace que el cursor sea puntero al hacer hover sobre el ícono "ver más" del mensaje de proyectos */
 	cursor: pointer;
 }
 
-.hide-mensaje-proyecto{ /* ? Clase usada para ocultar el mensaje al salir de cada imágen de proyectos */
+.hide-mensaje-proyecto {
+	/* ? Clase usada para ocultar el mensaje al salir de cada imágen de proyectos */
 	visibility: hidden;
 	transition: 0.4s;
 }
 
-.show-mensaje-proyecto{ /* ? Clase usada para mostrar el mensaje al hacer hover en cada imagen de proyectos */
+.show-mensaje-proyecto {
+	/* ? Clase usada para mostrar el mensaje al hacer hover en cada imagen de proyectos */
 	visibility: visible;
 	transition: 0.4s;
 }
 
-.animate__animated.animate__fadeInUp { /* ? Velocidad de la clase de animated.css */
+.animate__animated.animate__fadeInUp {
+	/* ? Velocidad de la clase de animated.css */
 	--animate-duration: 0.5s;
- }
+}
 
- .animate__animated.animate__fadeOutDown{ /* ? Velocidad de la clase de animated.css */
-	 --animation-duration:0.3s
- }
+.animate__animated.animate__fadeOutDown {
+	/* ? Velocidad de la clase de animated.css */
+	--animation-duration: 0.3s;
+}
 
- .ocultar-img-proyecto{ /* ? Oculta las imagenes al filtrarlas en el área proyecto */
+.ocultar-img-proyecto {
+	/* ? Oculta las imagenes al filtrarlas en el área proyecto */
 	display: none;
 	transition: 10s;
- }
+}
 
-.mensaje-proyecto i{ /* ? Color para las flechas dentro del mensaje de las imágenes de proyectos */
+.mensaje-proyecto i {
+	/* ? Color para las flechas dentro del mensaje de las imágenes de proyectos */
 	color: white;
 }
 
-.boton-proyectos{ /* ? Estilos de la etiqueta ancla del botón más proyectos */
+.boton-proyectos {
+	/* ? Estilos de la etiqueta ancla del botón más proyectos */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -687,9 +750,57 @@ body {
 	color: white;
 	font-family: raleway, sans-serif;
 	font-size: 2rem;
+	margin-top: 0.1rem;
 }
 
-.boton-proyectos:any-link{ /* ? Elimina las decoraciones del botón más proyectos */
+.boton-proyectos:any-link {
+	/* ? Elimina las decoraciones del botón más proyectos */
 	text-decoration: none;
 	color: white;
+}
+
+.contenedor-eligenos{
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	background-image: url(../images/chose_banner.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.contenedor-eligenos .titulo-principal { /* ?  Estilos título elígenos */
+	color: #040e27;
+	font-weight: 400;
+}
+
+.contenedor-eligenos p:first-of-type { /* ? Estilo primer párrafo elígenos */
+	margin-top: 2rem;
+	padding: 0;
+	font-family: raleway, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.3rem;
+	line-height: 2rem;
+	color: #040e27;
+	margin-bottom: 1.5rem;
+}
+
+.contenedor-eligenos p:last-of-type { /* ? Estilo último párrafo elígenos */
+	margin-top: 1rem;
+	padding: 0;
+	font-family: raleway, sans-serif;
+	font-weight: 400;
+	font-size: 1.1rem;
+	line-height: 2rem;
+	color: #596672;
+	margin-bottom: 2rem;
+}
+
+.boton-video{
+	background-color: white;
+	width: 4rem;
+	height: 4rem;
+	font-size: 1rem;
+	border-radius:2rem;
+	color: #f0542c;
 }
