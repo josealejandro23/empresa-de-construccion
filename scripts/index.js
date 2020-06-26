@@ -2,6 +2,15 @@ let x = $(document);
 x.ready(inicio);
 
 function inicio() {
+	/* Añadir clases al navbar al hacer scroll  */
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > 150) {
+			$(".navbar-menu").addClass("navbar-total");
+		}else if($(window).scrollTop() < 150){
+			$(".navbar-menu").removeClass("navbar-total");
+		}
+	});
+
 	let item = $(".item");
 	item.hover(
 		ingreso,
@@ -54,8 +63,8 @@ function salidaImg() {
 
 function verTodos() {
 	$(".img-proyecto")
-			.removeClass("ocultar-img-proyecto animate__animated animate__fadeOut")
-			.addClass("animate__animated animate__fadeIn");
+		.removeClass("ocultar-img-proyecto animate__animated animate__fadeOut")
+		.addClass("animate__animated animate__fadeIn");
 }
 
 function filtros() {
