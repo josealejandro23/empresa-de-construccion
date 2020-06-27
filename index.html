@@ -639,6 +639,63 @@
 		</div>
 		<!--todo: Fin elígenos  -->
 
+		<!--todo: inicio testimonios -->
+		<div class="container contenedor-testimonios">
+			<div class="titulo-principal text-center mb-5">
+				Testimonios
+			</div>
+			<div id="owl-demo" class="owl-carousel owl-theme">
+				<div class="item">
+					<img
+						class="mx-auto"
+						src="images/testimonios/alejandro.jpg"
+						alt=""
+					/>
+					<h4 class="mt-4 mb-3 text-center">José Alejandro Vargas</h4>
+					<h6 class="text-center mb-4">Ingeniero de procesos</h6>
+					<p class="text-center">
+						"Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+						Adipisci minus quasi ducimus ullam illum libero excepturi ad
+						molestias dolorem, maiores voluptate blanditiis cum delectus.
+						Recusandae!"
+					</p>
+				</div>
+				<div class="item">
+					<img
+						class="mx-auto"
+						src="images/testimonios/victor.jpg"
+						alt=""
+					/>
+					<h4 class="mt-4 text-center">Juan Perez</h4>
+					<h6 class="text-center">Agricultor</h6>
+					<p class="text-center">
+						"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Reprehenderit aliquam molestiae non animi, numquam inventore
+						facilis quas quis laboriosam quos incidunt! Eaque consectetur
+						voluptatum eligendi."
+					</p>
+				</div>
+				<div class="item">
+					<img class="mx-auto" src="images/testimonios/mayra.jpg" alt="" />
+					<h4 class="mt-4 text-center">Mayra Alejandra Figueroa</h4>
+					<h6 class="text-center">Residente local</h6>
+					<p class="text-center">
+						"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Dolore facere cum et incidunt velit voluptatibus, consectetur,
+						temporibus vitae sapiente non amet placeat accusantium
+						provident quam."
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--todo: fin testimonios  -->
+
+		<!--todo: inicio contancto  --> 
+		<div class="containter-fluid contenedor-contacto">
+			
+		</div>
+		<!--todo: fin contancto  -->
+
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script
@@ -659,18 +716,33 @@
 
 		<script src="owlcarousel/owl.carousel.js"></script>
 		<script>
-			$(".owl-carousel").owlCarousel({
+			$(".contenedor-servicios .owl-carousel").owlCarousel({
 				loop: true,
 				margin: 10,
 				responsiveClass: true,
 				responsive: {
 					0: {
 						items: 1,
-						nav: true,
+						nav: false,
+					},
+					480: {
+						items: 2,
+						nav: false,
 					},
 					767: {
 						items: 3,
 						nav: false,
+					},
+				},
+			});
+
+			$(".contenedor-testimonios .owl-carousel").owlCarousel({
+				loop: true,
+				margin: 10,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
 					},
 				},
 			});
