@@ -101,8 +101,9 @@ body {
 	transition: 1s;
 }
 
-.navbar-sticky{ /* ? Estilo del navbar al pegarse al top, manejado por jquery */
-	background-color: rgba(255,255,255,0.96);
+.navbar-sticky {
+	/* ? Estilo del navbar al pegarse al top, manejado por jquery */
+	background-color: rgba(255, 255, 255, 0.96);
 	position: sticky;
 }
 
@@ -815,55 +816,106 @@ body {
 	color: #f0542c;
 }
 
-.boton-modal:hover{ /* ? Efecto al hacer hover sobre el boton play del video modal */
+.boton-modal:hover {
+	/* ? Efecto al hacer hover sobre el boton play del video modal */
 	cursor: pointer;
 }
 
-.boton-modal:any-link{ /* ? Elimina estilos del link del botón video */
+.boton-modal:any-link {
+	/* ? Elimina estilos del link del botón video */
 	text-decoration: none;
 }
 
-.modal-content{ /* ? Estilos del contenedor del video modal */
+.modal-content {
+	/* ? Estilos del contenedor del video modal */
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-content h3{ /* ? Estilos del título del contenedor modal */
+.modal-content h3 {
+	/* ? Estilos del título del contenedor modal */
 	color: white;
 	font-family: raleway, sans-serif;
 }
 
-.contenedor-testimonios{ /* ? Ubicación del contenedor testimonios */
+.contenedor-testimonios {
+	/* ? Ubicación del contenedor testimonios */
 	margin-top: 7rem;
 	font-family: raleway, sans-serif;
 }
 
-.contenedor-testimonios .item img{ /* ? Estilos de la foto de testimonios */
+.contenedor-testimonios .item img {
+	/* ? Estilos de la foto de testimonios */
 	width: 120px !important;
 	height: 120px;
 	border-radius: 60px;
 }
 
-.contenedor-testimonios h4{ /* ? estilos contenedor testimonios */
+.contenedor-testimonios h4 {
+	/* ? estilos contenedor testimonios */
 	font-weight: 900;
 	font-size: 1.8rem;
 	line-height: 2rem;
 	color: #040e27;
 }
 
-.contenedor-testimonios h6{ /* ? estilos titulos testimonios */
+.contenedor-testimonios h6 {
+	/* ? estilos titulos testimonios */
 	font-weight: 400;
 	font-size: 1.2rem;
 	line-height: 1.5rem;
 	color: #596672;
 }
 
-.contenedor-testimonios p{ /* ? estilos titulos testimonios */ 
+.contenedor-testimonios p {
+	/* ? estilos titulos testimonios */
 	font-weight: 400;
 	font-size: 1.5rem;
 	line-height: 2rem;
 	color: #040e27;
 }
 
-.owl-dots{ /* ? Elimina los botones para desplazarse en el owlcarousel */
+.owl-dots {
+	/* ? Elimina los botones para desplazarse en el owlcarousel */
 	display: none;
+}
+
+.contenedor-contacto {
+	/* ? Estilos del contenedor contacto */
+	margin-top: 5rem;
+	background-image: url("../images/contact.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	font-family: raleway, sans-serif;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	position: relative; /* ? Usado para permitir ubicar la capa de transparencia sobre él */
+}
+
+.contenedor-contacto p {
+	/* ? Estilos del texto del área contacto */
+	font-size: 3rem;
+	font-weight: 600;
+	line-height: 3.5rem;
+}
+
+.contenedor-contacto .contenedor-capa {
+	/* ? Capa de color sobre el área de contacto */
+	position: absolute;
+	top: 0;
+	width: 100%; /* ? ocupa el ancho de la pantalla */
+	height: 100%;
+	background-color: rgba(4, 14, 39, 0.5);
+	z-index: 0;
+}
+
+.contenedor-contacto .boton-nosotros{ /* ? Estilos botón contacto */
+	padding: 1rem 3rem;
+	height: 5rem;
+	width: auto;
+}
+
+.contenedor-contacto a:any-link{ /* ? Estilos ancla boton contacto */
+	text-decoration: none;
 }
