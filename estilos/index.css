@@ -910,12 +910,14 @@ body {
 	z-index: 0;
 }
 
-.contenedor-contacto .boton-nosotros{ /* ? Estilos botón contacto */
+.contenedor-contacto .boton-nosotros {
+	/* ? Estilos botón contacto */
 	padding: 1rem 3rem;
 	height: 5rem;
 	width: auto;
 }
 
-.contenedor-contacto a:any-link{ /* ? Estilos ancla boton contacto */
+.contenedor-contacto a:any-link {
+	/* ? Estilos ancla boton contacto */
 	text-decoration: none;
 }
