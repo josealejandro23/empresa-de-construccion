@@ -24,7 +24,7 @@ function inicio() {
 
 
 	/* Efectos sobre el owl carousel, selecciona cada item del owlcarousel */
-	let item = $(".item");
+	let item = $(".contenedor-servicios .item");
 	item.hover(
 		ingreso,
 		salida

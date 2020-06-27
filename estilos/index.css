@@ -283,7 +283,7 @@ body {
 		padding: 1rem;
 	}
 
-	.contenedor-owlcarousel .item {
+	.contenedor-servicios .contenedor-owlcarousel .item {
 		/* ? Ajusta el pading para el owlcarousel */
 		padding: 1rem;
 	}
@@ -401,7 +401,7 @@ body {
 		margin-bottom: 3rem;
 	}
 
-	.contenedor-owlcarousel .item {
+	.contenedor-servicios .contenedor-owlcarousel .item {
 		/* ? Elimina el padding para pantallas pequeñas del owlcarousel */
 		padding: 0;
 	}
@@ -830,4 +830,40 @@ body {
 .modal-content h3{ /* ? Estilos del título del contenedor modal */
 	color: white;
 	font-family: raleway, sans-serif;
+}
+
+.contenedor-testimonios{ /* ? Ubicación del contenedor testimonios */
+	margin-top: 7rem;
+	font-family: raleway, sans-serif;
+}
+
+.contenedor-testimonios .item img{ /* ? Estilos de la foto de testimonios */
+	width: 120px !important;
+	height: 120px;
+	border-radius: 60px;
+}
+
+.contenedor-testimonios h4{ /* ? estilos contenedor testimonios */
+	font-weight: 900;
+	font-size: 1.8rem;
+	line-height: 2rem;
+	color: #040e27;
+}
+
+.contenedor-testimonios h6{ /* ? estilos titulos testimonios */
+	font-weight: 400;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	color: #596672;
+}
+
+.contenedor-testimonios p{ /* ? estilos titulos testimonios */ 
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	color: #040e27;
+}
+
+.owl-dots{ /* ? Elimina los botones para desplazarse en el owlcarousel */
+	display: none;
 }
