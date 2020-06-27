@@ -96,14 +96,13 @@ body {
 	height: 5rem;
 	margin-top: -2.5rem;
 	z-index: 4;
-	position: sticky;
 	top: 0;
+	background-color: transparent;
 }
 
-.navbar-total{ /* ? Estilo del navbar al pegarse al top, manejado por jquery */
+.navbar-sticky{ /* ? Estilo del navbar al pegarse al top, manejado por jquery */
 	background-color: rgba(255,255,255,0.96);
-	transition: 0.2s;
-	transition-timing-function: ease-in-out;
+	position: sticky;
 }
 
 .navbar-menu .navbar {

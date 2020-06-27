@@ -4,10 +4,14 @@ x.ready(inicio);
 function inicio() {
 	/* Añadir clases al navbar al hacer scroll  */
 	$(window).scroll(function () {
-		if ($(window).scrollTop() > 150) {
-			$(".navbar-menu").addClass("navbar-total");
-		}else if($(window).scrollTop() < 150){
-			$(".navbar-menu").removeClass("navbar-total");
+		var pos;
+		if ($(window).scrollTop() >= 450) {
+			$(".navbar-menu").addClass("navbar-sticky animate__fadeInDown");
+			pos = 1;
+		}
+		if ($(window).scrollTop() < 450) {
+			$(".navbar-menu").removeClass("navbar-sticky animate__fadeInDown");
+			pos = 0;
 		}
 	});
 
