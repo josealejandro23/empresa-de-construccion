@@ -98,11 +98,18 @@ body {
 	z-index: 4;
 	top: 0;
 	background-color: transparent;
+	transition: 1s;
 }
 
 .navbar-sticky{ /* ? Estilo del navbar al pegarse al top, manejado por jquery */
 	background-color: rgba(255,255,255,0.96);
 	position: sticky;
+}
+
+.navbar-regreso{
+	background-color: red;
+	transition: 1s;
+	transition-timing-function: ease-in-out;
 }
 
 .navbar-menu .navbar {

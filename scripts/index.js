@@ -7,11 +7,9 @@ function inicio() {
 		var pos;
 		if ($(window).scrollTop() >= 450) {
 			$(".navbar-menu").addClass("navbar-sticky animate__fadeInDown");
-			pos = 1;
 		}
 		if ($(window).scrollTop() < 450) {
 			$(".navbar-menu").removeClass("navbar-sticky animate__fadeInDown");
-			pos = 0;
 		}
 	});
 
