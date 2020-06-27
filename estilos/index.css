@@ -106,12 +106,6 @@ body {
 	position: sticky;
 }
 
-.navbar-regreso{
-	background-color: red;
-	transition: 1s;
-	transition-timing-function: ease-in-out;
-}
-
 .navbar-menu .navbar {
 	/* ? Estilos de letra y tamaño al navbar menu */
 	font-family: raleway, sans-serif;
@@ -819,4 +813,21 @@ body {
 	font-size: 1rem;
 	border-radius: 2rem;
 	color: #f0542c;
+}
+
+.boton-modal:hover{ /* ? Efecto al hacer hover sobre el boton play del video modal */
+	cursor: pointer;
+}
+
+.boton-modal:any-link{ /* ? Elimina estilos del link del botón video */
+	text-decoration: none;
+}
+
+.modal-content{ /* ? Estilos del contenedor del video modal */
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content h3{ /* ? Estilos del título del contenedor modal */
+	color: white;
+	font-family: raleway, sans-serif;
 }

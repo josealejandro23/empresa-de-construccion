@@ -13,6 +13,10 @@ function inicio() {
 		}
 	});
 
+	$("#exampleModal").on('hidden.bs.modal', function (e) {
+		$("#exampleModal iframe").attr("src", $("#exampleModal iframe").attr("src"));
+  });
+
 	let item = $(".item");
 	item.hover(
 		ingreso,
