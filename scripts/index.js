@@ -13,38 +13,50 @@ function inicio() {
 		}
 	});
 
-	$("#exampleModal").on('hidden.bs.modal', function (e) {
-		$("#exampleModal iframe").attr("src", $("#exampleModal iframe").attr("src"));
-  });
+	/* Esta función hace que el video modal se silencie al salir de él 
+	y permite que siga funcionando al reingresar */
+	$("#exampleModal").on("hidden.bs.modal", function (e) {
+		$("#exampleModal iframe").attr(
+			"src",
+			$("#exampleModal iframe").attr("src")
+		);
+	});
 
+
+	/* Efectos sobre el owl carousel, selecciona cada item del owlcarousel */
 	let item = $(".item");
 	item.hover(
 		ingreso,
 		salida
-	); /* ? añade estilos al hacer hover sobre el owl carousel */
+	); 
+	
+	/* Función para agregar estilos al entrar al owl carousel */
+	function ingreso() {
+		$(this).find("h3").removeClass("titulo-hoverOut");
+		$("img", this).removeClass("img-out");
+		$(this).find("h3").addClass("titulo-hoverIn");
+		$("img", this).addClass("img-in");
+	}
+	
+	/* Función para remover estilos al salir al owl carousel */
+	function salida() {
+		$("h3", this).removeClass("titulo-hoverIn");
+		$("img", this).removeClass("img-in");
+		$(this).children("h3").addClass("titulo-hoverOut");
+		$("img", this).addClass("img-out");
+	}
+	
+	/* Funciones para añadir efectos sobre las imágenes del área elígenos */
 	let img = $(".img-proyecto");
 	img.hover(ingresoImg, salidaImg);
-	let x = $("#todos");
-	x.click(verTodos);
+	/* Funciones para la barra de navegación de la sección elígenos */
+	$("#todos").click(verTodos);
 	$("#filtros").click(filtros);
 	$("#sistemas").click(sistemas);
 	$("#trampas").click(trampas);
 }
 
-function ingreso() {
-	$(this).find("h3").removeClass("titulo-hoverOut");
-	$("img", this).removeClass("img-out");
-	$(this).find("h3").addClass("titulo-hoverIn");
-	$("img", this).addClass("img-in");
-}
-
-function salida() {
-	$("h3", this).removeClass("titulo-hoverIn");
-	$("img", this).removeClass("img-in");
-	$(this).children("h3").addClass("titulo-hoverOut");
-	$("img", this).addClass("img-out");
-}
-
+/* Estilos al hacer hover sobre una imágen del área elígenos */
 function ingresoImg() {
 	$("img", this).removeClass("imgPro-out");
 	$("img", this).addClass("imgPro-in");
@@ -56,6 +68,7 @@ function ingresoImg() {
 	);
 }
 
+/* Estilos al salir del hover sobre una imágen del área elígenos */
 function salidaImg() {
 	$("img", this).removeClass("imgPro-in");
 	$("img", this).addClass("imgPro-out");
@@ -67,12 +80,14 @@ function salidaImg() {
 	);
 }
 
+/* ? Muestra todas las imágenes de elígenos */
 function verTodos() {
 	$(".img-proyecto")
 		.removeClass("ocultar-img-proyecto animate__animated animate__fadeOut")
 		.addClass("animate__animated animate__fadeIn");
 }
 
+/* ? Muestra solo las imágenes con la clase filtros y oculta las demás */
 function filtros() {
 	$(".sistemas").addClass(
 		"animate__animated animate__fadeOut ocultar-img-proyecto"
@@ -85,6 +100,7 @@ function filtros() {
 		.addClass("animate__animated animate__fadeIn");
 }
 
+/* ? Muestra solo las imágenes con la clase trampas y oculta las demás */
 function trampas() {
 	$(".sistemas").addClass(
 		"animate__animated animate__fadeOut ocultar-img-proyecto"
@@ -97,6 +113,7 @@ function trampas() {
 		.addClass("animate__animated animate__fadeIn");
 }
 
+/* ? Muestra solo las imágenes con la clase sistemas y oculta las demás */
 function sistemas() {
 	$(".filtros").addClass(
 		"animate__animated animate__fadeOut ocultar-img-proyecto"
