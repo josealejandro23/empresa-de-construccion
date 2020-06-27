@@ -921,3 +921,9 @@ body {
 	/* ? Estilos ancla boton contacto */
 	text-decoration: none;
 }
+
+.contenedor-footer{
+	background-color: #040e27;
+	width: 100vw;
+	height: 20rem;
+}
