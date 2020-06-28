@@ -303,6 +303,13 @@ body {
 		line-height: 1.5rem;
 		padding-left: 0;
 	}
+
+	.contenedor-footer .datos-footer {
+		/* ? Estilos de la parte principal del footer */
+		margin-top: 6rem;
+		padding-bottom: 5rem;
+		border-bottom: 1px solid #363e52;
+	}
 }
 
 @media (min-width: 992px) {
@@ -417,6 +424,13 @@ body {
 		font-size: 1.2rem;
 		font-weight: 500;
 		line-height: 1.5rem;
+	}
+
+	.contenedor-footer .datos-footer {
+		/* ? Estilos de la parte principal del footer */
+		margin-top: 6rem;
+		padding-bottom: 10rem;
+		border-bottom: 1px solid #363e52;
 	}
 }
 
@@ -917,58 +931,64 @@ body {
 	width: auto;
 }
 
-.contenedor-contacto a:any-link, .contenedor-footer a:any-link {
+.contenedor-contacto a:any-link,
+.contenedor-footer a:any-link {
 	/* ? Estilos ancla boton contacto */
 	text-decoration: none;
 }
 
-.contenedor-footer{  /* ? Estilos del footer */
+.contenedor-footer {
+	/* ? Estilos del footer */
 	background-color: #040e27;
 	padding-top: 5rem;
 	font-family: raleway, sans-serif;
+	position: relative; /* ? permite sobre ponerse al navbar */
+	z-index: 4;
 }
 
-.contenedor-footer img{ /* ? Estilos de la imagen del footer */
+.contenedor-footer img {
+	/* ? Estilos de la imagen del footer */
 	width: 20rem;
 	height: 4rem;
 }
 
-.header-footer .boton-nosotros{ /* ? Estilo del botón del footer */
+.header-footer .boton-nosotros {
+	/* ? Estilo del botón del footer */
 	width: 20rem;
 }
 
-.header-footer .boton-nosotros:hover{ /* ? Estilo del botón del footer al hacer hover*/
+.header-footer .boton-nosotros:hover {
+	/* ? Estilo del botón del footer al hacer hover*/
 	background-color: #f0542c;
 }
 
-.contenedor-footer .header-footer{ /* ? Estilos de la parte superior del footer */
+.contenedor-footer .header-footer {
+	/* ? Estilos de la parte superior del footer */
 	padding-bottom: 4rem;
-	border-bottom: 1px solid #363E52;
+	border-bottom: 1px solid #363e52;
 }
 
-.contenedor-footer .datos-footer{ /* ? Estilos de la parte principal del footer */
-	margin-top: 6rem;
-	padding-bottom: 10rem;
-	border-bottom: 1px solid #363E52;
-}
-
-.titulo-footer{ /* ? Estilos títulos del footer */
+.titulo-footer {
+	/* ? Estilos títulos del footer */
 	color: white;
 	font-size: 1.5rem;
 }
 
-.datos-footer .titulo-footer ~ p{ /* ? Estilos de los textos del footer */
+.datos-footer .titulo-footer ~ p {
+	/* ? Estilos de los textos del footer */
 	color: #919191;
 }
 
-.contenedor-footer form{ /* ? Estilos del formularios de registro del footer */
+.contenedor-footer form {
+	/* ? Estilos del formularios de registro del footer */
 	background-color: white;
 	height: 4.5rem;
 	border-radius: 2.5rem;
 	max-width: 26rem;
 }
 
-.contenedor-footer form .input-text{ /* ? Estilos del cuadro de texto de registro del footer */
+.contenedor-footer form .input-text {
+	/* ? Estilos del cuadro de texto de registro del footer */
 	border: none;
 	outline: none;
 	border-radius: 2rem;
@@ -977,7 +997,8 @@ body {
 	font-weight: 400;
 }
 
-.contenedor-footer form .input-boton{ /* ? Estilos del botón de registro del footer */
+.contenedor-footer form .input-boton {
+	/* ? Estilos del botón de registro del footer */
 	background-color: #f0542c;
 	color: white;
 	font-weight: 500;
@@ -990,9 +1011,10 @@ body {
 	align-self: center;
 	justify-self: right;
 	margin-right: 0.5rem;
-} 
+}
 
-.contenedor-footer .datos-autor{ /* ? Estilos pie del footer */
+.contenedor-footer .datos-autor {
+	/* ? Estilos pie del footer */
 	height: auto;
 	color: #919191;
 	font-size: 1.3rem;
@@ -1000,10 +1022,12 @@ body {
 	padding-bottom: 1rem;
 }
 
-.contenedor-footer .datos-autor p:first-child span:last-child{ /* ? Estilo nombre de auto píe del footer */
+.contenedor-footer .datos-autor p:first-child span:last-child {
+	/* ? Estilo nombre de auto píe del footer */
 	color: #f0542c;
 }
 
-.contenedor-footer .datos-autor p:first-child{ /* ? Estilos para los párrafos del píe del footer */
+.contenedor-footer .datos-autor p:first-child {
+	/* ? Estilos para los párrafos del píe del footer */
 	margin-bottom: 0;
 }
