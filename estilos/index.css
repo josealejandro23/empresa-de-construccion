@@ -1022,8 +1022,12 @@ body {
 	padding-bottom: 1rem;
 }
 
-.contenedor-footer .datos-autor p:first-child span:last-child {
+.contenedor-footer .datos-autor p:first-child a {
 	/* ? Estilo nombre de auto píe del footer */
+	color: #f0542c;
+}
+
+.contenedor-footer .datos-autor i{
 	color: #f0542c;
 }
 
